@@ -1,0 +1,6 @@
+{
+  "name": "ATHMANATHAN STUDY ABROAD",
+  "description": "Official platform for Athmanathan Study Abroad: Your Dream. Our Guidance. Overseas education, countries, courses, universities, visa guidance, and student essentials.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
