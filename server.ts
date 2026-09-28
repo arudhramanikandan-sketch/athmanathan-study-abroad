@@ -1,38 +1,11 @@
-import express from 'express';
 import path from 'path';
-import cookieParser from 'cookie-parser';
+import express from 'express';
 import { createServer as createViteServer } from 'vite';
-import { router as apiRouter } from './server/routes';
+import { app } from './server/app';
 
 const PORT = 3000;
 
 async function startServer() {
-  const app = express();
-
-  // Standard middlewares
-  app.use(express.json({ limit: '15mb' }));
-  app.use(express.urlencoded({ extended: true, limit: '15mb' }));
-  app.use(cookieParser());
-
-  // Serve public and uploaded media files directly
-  const publicPath = path.join(process.cwd(), 'public');
-  const uploadsPath = path.join(process.cwd(), 'public', 'uploads');
-  app.use(express.static(publicPath));
-  app.use('/uploads', express.static(uploadsPath));
-
-  // Health check
-  app.get('/api/health', (req, res) => {
-    res.json({ status: 'ok', name: 'Athmanathan Study Abroad Server', time: new Date().toISOString() });
-  });
-
-  // Mount API routes
-  app.use('/api', apiRouter);
-
-  // Disable / redirect legacy extra admin paths like /admin/irs to /admin
-  app.get(['/admin/irs', '/admin/irs/*', '/admin/dashboard', '/admin/dashboard/*'], (req, res) => {
-    res.redirect(302, '/admin');
-  });
-
   // Vite middleware for development vs static build for production
   if (process.env.NODE_ENV !== 'production') {
     const vite = await createViteServer({
@@ -53,7 +26,12 @@ async function startServer() {
   });
 }
 
-startServer().catch((err) => {
-  console.error('Fatal error starting server:', err);
-  process.exit(1);
-});
+// In local execution or container, start server listener
+if (!process.env.VERCEL && !process.env.AWS_LAMBDA_FUNCTION_NAME) {
+  startServer().catch((err) => {
+    console.error('Fatal error starting server:', err);
+    process.exit(1);
+  });
+}
+
+export default app;

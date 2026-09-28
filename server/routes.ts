@@ -971,17 +971,24 @@ router.post('/admin/upload', requireAdminAuth, (req: Request, res: Response) => 
 
     const buffer = Buffer.from(matches[2], 'base64');
     const uploadsDir = path.join(process.cwd(), 'public', 'uploads');
-    if (!fs.existsSync(uploadsDir)) {
-      fs.mkdirSync(uploadsDir, { recursive: true });
+
+    try {
+      if (!fs.existsSync(uploadsDir)) {
+        fs.mkdirSync(uploadsDir, { recursive: true });
+      }
+
+      const safeFilename = `${Date.now()}_${path.basename(filename, ext).replace(/[^a-zA-Z0-9_-]/g, '')}${ext}`;
+      const filePath = path.join(uploadsDir, safeFilename);
+
+      fs.writeFileSync(filePath, buffer);
+      const publicUrl = `/uploads/${safeFilename}`;
+
+      res.json({ success: true, url: publicUrl });
+    } catch (diskErr) {
+      console.warn('Filesystem write to /public/uploads unavailable, using data URI fallback:', diskErr);
+      // Works universally in <img src="..."> even on read-only serverless platforms like Vercel
+      res.json({ success: true, url: base64Data });
     }
-
-    const safeFilename = `${Date.now()}_${path.basename(filename, ext).replace(/[^a-zA-Z0-9_-]/g, '')}${ext}`;
-    const filePath = path.join(uploadsDir, safeFilename);
-
-    fs.writeFileSync(filePath, buffer);
-    const publicUrl = `/uploads/${safeFilename}`;
-
-    res.json({ success: true, url: publicUrl });
   } catch (error) {
     console.error('File upload error:', error);
     res.status(500).json({ error: 'Failed to upload image file.' });

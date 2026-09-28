@@ -1,13 +1,25 @@
 import fs from 'fs';
 import path from 'path';
+import bundledDatabaseData from '../data/athmanathan_db.json';
 
 // Production Persistent Database for Athmanathan Study Abroad
 // Stored on disk at /data/athmanathan_db.json
 // Once created, it is NEVER re-seeded on server restart.
 // Deleted items stay deleted forever.
 
-const DATA_DIR = path.join(process.cwd(), 'data');
-const DB_FILE = path.join(DATA_DIR, 'athmanathan_db.json');
+function getStoragePaths() {
+  const isServerless = Boolean(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME);
+  const bundledDir = path.join(process.cwd(), 'data');
+  const bundledFile = path.join(bundledDir, 'athmanathan_db.json');
+
+  if (isServerless) {
+    const tmpDir = path.join('/tmp', 'data');
+    const tmpFile = path.join(tmpDir, 'athmanathan_db.json');
+    return { targetDir: tmpDir, targetFile: tmpFile, bundledFile };
+  }
+
+  return { targetDir: bundledDir, targetFile: bundledFile, bundledFile };
+}
 
 export interface SiteSettings {
   businessName: string;
@@ -302,17 +314,37 @@ export function getDb(): DatabaseSchema {
     return dbCache;
   }
 
-  if (!fs.existsSync(DATA_DIR)) {
-    fs.mkdirSync(DATA_DIR, { recursive: true });
-  }
+  const { targetDir, targetFile, bundledFile } = getStoragePaths();
 
-  if (fs.existsSync(DB_FILE)) {
+  // Try reading targetFile first (which in serverless may be in /tmp)
+  if (fs.existsSync(targetFile)) {
     try {
-      const content = fs.readFileSync(DB_FILE, 'utf-8');
+      const content = fs.readFileSync(targetFile, 'utf-8');
       dbCache = JSON.parse(content);
       return dbCache!;
     } catch (e) {
-      console.error('Failed to read existing database file, backing up and reinitializing', e);
+      console.warn('Failed to read target database file:', e);
+    }
+  }
+
+  // If targetFile does not exist or failed (e.g. initial run on Vercel), try reading bundled file
+  if (fs.existsSync(bundledFile)) {
+    try {
+      const content = fs.readFileSync(bundledFile, 'utf-8');
+      dbCache = JSON.parse(content);
+      return dbCache!;
+    } catch (e) {
+      console.warn('Failed to read bundled database file:', e);
+    }
+  }
+
+  // Statically imported JSON fallback (bundled directly into serverless function code)
+  if (bundledDatabaseData) {
+    try {
+      dbCache = JSON.parse(JSON.stringify(bundledDatabaseData)) as DatabaseSchema;
+      return dbCache!;
+    } catch (e) {
+      console.warn('Failed to use bundledDatabaseData fallback:', e);
     }
   }
 
@@ -330,9 +362,7 @@ export function saveDb(
   details = ''
 ): void {
   dbCache = data;
-  if (!fs.existsSync(DATA_DIR)) {
-    fs.mkdirSync(DATA_DIR, { recursive: true });
-  }
+  const { targetDir, targetFile } = getStoragePaths();
 
   if (details && action !== 'LOGIN') {
     const log: AuditLog = {
@@ -350,10 +380,17 @@ export function saveDb(
     }
   }
 
-  // Atomic write via temp file
-  const tempFile = DB_FILE + '.tmp';
-  fs.writeFileSync(tempFile, JSON.stringify(dbCache, null, 2), 'utf-8');
-  fs.renameSync(tempFile, DB_FILE);
+  // Atomic write via temp file with fallback handling for read-only environments
+  try {
+    if (!fs.existsSync(targetDir)) {
+      fs.mkdirSync(targetDir, { recursive: true });
+    }
+    const tempFile = targetFile + '.' + Date.now() + '.tmp';
+    fs.writeFileSync(tempFile, JSON.stringify(dbCache, null, 2), 'utf-8');
+    fs.renameSync(tempFile, targetFile);
+  } catch (err) {
+    console.warn('Database write to disk skipped or caught in read-only environment:', err);
+  }
 }
 
 // Initial one-time database seed data (only inserted ONCE when database file does not exist)

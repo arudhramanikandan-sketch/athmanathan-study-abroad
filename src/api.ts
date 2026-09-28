@@ -5,17 +5,46 @@ import {
   Enquiry,
   CandidateStatus,
 } from './types';
+import fallbackBootstrapData from '../public/bootstrap.json';
 
 const BASE_URL = '/api';
 
 export async function fetchPublicData(): Promise<PublicBootstrapData> {
-  const res = await fetch(`${BASE_URL}/public/bootstrap`, {
-    headers: { 'Cache-Control': 'no-cache' },
-  });
-  if (!res.ok) {
-    throw new Error('Unable to load database records from server.');
+  // 1. Primary: live backend API endpoint
+  try {
+    const res = await fetch(`${BASE_URL}/public/bootstrap`, {
+      headers: { 'Cache-Control': 'no-cache' },
+    });
+    if (res.ok) {
+      const contentType = res.headers.get('content-type') || '';
+      if (contentType.includes('application/json')) {
+        const json = await res.json();
+        if (json && json.settings && Array.isArray(json.countries)) {
+          return json as PublicBootstrapData;
+        }
+      }
+    }
+  } catch (apiErr) {
+    console.warn('API /api/public/bootstrap request failed, falling back to static cache:', apiErr);
   }
-  return res.json();
+
+  // 2. Secondary fallback: static edge CDN cache (/bootstrap.json)
+  try {
+    const staticRes = await fetch('/bootstrap.json', {
+      headers: { 'Cache-Control': 'no-cache' },
+    });
+    if (staticRes.ok) {
+      const json = await staticRes.json();
+      if (json && json.settings && Array.isArray(json.countries)) {
+        return json as PublicBootstrapData;
+      }
+    }
+  } catch (staticErr) {
+    console.warn('Static /bootstrap.json request failed, falling back to bundled data:', staticErr);
+  }
+
+  // 3. Guaranteed fallback: statically bundled bootstrap data
+  return fallbackBootstrapData as unknown as PublicBootstrapData;
 }
 
 export async function fetchLiveCurrency(): Promise<LiveCurrencyData> {

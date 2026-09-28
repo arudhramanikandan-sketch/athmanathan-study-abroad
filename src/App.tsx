@@ -87,27 +87,30 @@ export default function App() {
       setIsAdminRoute(false);
       setShowAdminPortal(false);
 
-      if (hash === 'irs' || hash === 'irs-study-abroad') {
+      const cleanPath = path.replace(/^\//, '');
+      const validPages = [
+        'home',
+        'about',
+        'countries',
+        'courses',
+        'universities',
+        'services',
+        'ielts-languages',
+        'student-essentials',
+        'scholarships',
+        'esims',
+        'posters',
+        'faqs',
+        'contact',
+        'irs',
+      ];
+
+      if (hash === 'irs' || hash === 'irs-study-abroad' || cleanPath === 'irs' || cleanPath === 'irs-study-abroad') {
         setActivePage('irs');
-      } else if (
-        [
-          'home',
-          'about',
-          'countries',
-          'courses',
-          'universities',
-          'services',
-          'ielts-languages',
-          'student-essentials',
-          'scholarships',
-          'esims',
-          'posters',
-          'faqs',
-          'contact',
-          'irs',
-        ].includes(hash)
-      ) {
+      } else if (validPages.includes(hash)) {
         setActivePage(hash);
+      } else if (validPages.includes(cleanPath)) {
+        setActivePage(cleanPath);
       }
     };
 
