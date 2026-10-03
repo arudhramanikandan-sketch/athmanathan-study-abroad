@@ -104,6 +104,7 @@ The server will automatically serve both the static Vite frontend and the `/api`
 - **Default Super Admin**:
   - **Username**: `admin`
   - **Default Password**: `Admin@2026`
+  - **Email**: `info@athmanathanstudyabroad.com`
 - **Security Features**:
   - Secure HttpOnly session tokens with Bearer fallback
   - Optional Google Authenticator / Microsoft Authenticator TOTP 2FA

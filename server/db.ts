@@ -402,7 +402,7 @@ function getInitialSeedDatabase(): DatabaseSchema {
       logoUrl: '/logo.jpeg',
       phone: '+91 9994986650',
       whatsapp: '+91 9994986650',
-      email: 'athmanathanstudyabroad@gmail.com',
+      email: 'info@athmanathanstudyabroad.com',
       address: '1/149, Ganesh Complex, Avinashi Road, Neelambur, Coimbatore - 641 062, Tamil nadu, India.',
       googleMapsUrl: 'https://maps.app.goo.gl/pvmJsk8P65znkmt46?g_st=awb',
       googleProfileUrl: 'https://share.google/s1ZUKgcqlCbMBB2zN',
@@ -424,7 +424,7 @@ function getInitialSeedDatabase(): DatabaseSchema {
       {
         id: 'admin_root',
         username: 'admin',
-        email: 'athmanathanstudyabroad@gmail.com',
+        email: 'info@athmanathanstudyabroad.com',
         // default initial bcrypt hash for 'Admin@2026'
         passwordHash: '$2b$10$DYFp6DG/HGlECKUm8667auTCd0hyo3CYJvDIin/izLKofbvz9CUj.',
         role: 'super_admin',

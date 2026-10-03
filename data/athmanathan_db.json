@@ -4,7 +4,7 @@
     "tagline": "Your Dream. Our Guidance.",
     "phone": "+91 9994986650",
     "whatsapp": "+91 9994986650",
-    "email": "athmanathanstudyabroad@gmail.com",
+    "email": "info@athmanathanstudyabroad.com",
     "address": "1/149, Ganesh Complex, Avinashi Road, Neelambur, Coimbatore - 641 062, Tamil nadu, India.",
     "googleMapsUrl": "https://maps.app.goo.gl/pvmJsk8P65znkmt46?g_st=awb",
     "googleProfileUrl": "https://share.google/s1ZUKgcqlCbMBB2zN",
@@ -27,7 +27,7 @@
     {
       "id": "admin_root",
       "username": "admin",
-      "email": "athmanathanstudyabroad@gmail.com",
+      "email": "info@athmanathanstudyabroad.com",
       "passwordHash": "$2b$10$DYFp6DG/HGlECKUm8667auTCd0hyo3CYJvDIin/izLKofbvz9CUj.",
       "role": "super_admin",
       "mfaEnabled": true,
@@ -37,6 +37,15 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "log_1791030941284_fku2",
+      "timestamp": "2026-10-03T12:35:41.284Z",
+      "adminUser": "PUBLIC_USER",
+      "action": "CREATE",
+      "entity": "ENQUIRY",
+      "recordId": "New enquiry submitted by Priya",
+      "details": "New enquiry submitted by Priya Nathan (+91 9994986650)"
+    },
     {
       "id": "log_1790584837075_gt5r",
       "timestamp": "2026-09-28T08:40:37.075Z",
@@ -1593,6 +1602,25 @@
     }
   ],
   "enquiries": [
+    {
+      "id": "enq_1791030941284_icgn",
+      "createdAt": "2026-10-03T12:35:41.284Z",
+      "fullName": "Priya Nathan",
+      "whatsappMobile": "+91 9994986650",
+      "email": "priya@example.com",
+      "highestQualification": "",
+      "currentLocation": "",
+      "preferredCountry": "Malaysia",
+      "preferredCourse": "",
+      "preferredIntake": "",
+      "englishTestStatus": "",
+      "workExperience": "",
+      "passportStatus": "",
+      "message": "Looking for university admission",
+      "sourcePage": "",
+      "status": "New",
+      "notes": []
+    },
     {
       "id": "enq_1790584837075_1e22",
       "createdAt": "2026-09-28T08:40:37.075Z",
