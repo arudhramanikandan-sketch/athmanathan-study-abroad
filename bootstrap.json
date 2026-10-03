@@ -1,0 +1,1499 @@
+{
+  "settings": {
+    "businessName": "ATHMANATHAN STUDY ABROAD",
+    "tagline": "Your Dream. Our Guidance.",
+    "phone": "+91 9994986650",
+    "whatsapp": "+91 9994986650",
+    "email": "info@athmanathanstudyabroad.com",
+    "address": "1/149, Ganesh Complex, Avinashi Road, Neelambur, Coimbatore - 641 062, Tamil nadu, India.",
+    "googleMapsUrl": "https://maps.app.goo.gl/pvmJsk8P65znkmt46?g_st=awb",
+    "googleProfileUrl": "https://share.google/s1ZUKgcqlCbMBB2zN",
+    "websiteUrl": "https://athmanathanstudyabroad.com",
+    "facebookUrl": "https://www.facebook.com/share/1HcacNz8FK/",
+    "instagramUrl": "https://www.instagram.com/athmanathanstudyabroad?utm_source=qr&stkn=bnFlajMyaHFpN2Z1",
+    "youtubeUrl": "https://youtube.com/@athmanathanstudyabroad",
+    "partnerName": "Happy Journey Holidays",
+    "partnerTagline": "Our Travel & Support Partner",
+    "partnerUrl": "https://happyjourneyholidays.com",
+    "workingHours": "Monday – Saturday: 9:30 AM – 7:00 PM IST",
+    "registrationNumber": "Govt. Regd. (MSME UDYAM-TN-03-0134152)",
+    "heroHeadline": "Your Dream. Our Guidance.",
+    "heroSubheadline": "Study Abroad | IELTS | Language Training | Admissions | Visa Guidance",
+    "disclaimerNotice": "Final admission, scholarship and immigration decisions are made solely by universities, institutions, scholarship providers and official visa authorities. We provide transparent and responsible guidance without misleading guarantees.",
+    "esimPurchaseUrl": "https://discover.airalo.com/happyjourneyholidays/",
+    "logoUrl": "/logo.jpeg"
+  },
+  "countries": [
+    {
+      "id": "cnt_uk",
+      "name": "United Kingdom",
+      "code": "GB",
+      "flag": "🇬🇧",
+      "coverImage": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=80",
+      "description": "World-renowned education system with 1-year Master degrees, extensive graduate route visa options, and globally recognized qualifications.",
+      "capital": "London",
+      "majorCities": [
+        "London",
+        "Manchester",
+        "Birmingham",
+        "Edinburgh",
+        "Glasgow",
+        "Coventry"
+      ],
+      "currency": "British Pound (GBP)",
+      "currencyCode": "GBP",
+      "timeZone": "GMT / BST (UTC+0 / UTC+1)",
+      "mainLanguage": "English",
+      "studyLevels": [
+        "Undergraduate (Bachelor)",
+        "Postgraduate (Master - 1 Year)",
+        "Doctorate (PhD)",
+        "Foundation / Pre-Master"
+      ],
+      "intakes": [
+        "September / October (Major)",
+        "January / February (Secondary)",
+        "April / May (Selected)"
+      ],
+      "entryRequirements": "Min 60%-70% in Bachelor/Class 12 from recognized boards/universities.",
+      "englishRequirements": "IELTS Academic 6.0 - 6.5 (min 5.5 in each band), PTE 58-65, or MOI waiver for eligible universities.",
+      "applicationProcess": "Direct university portal or UCAS, SOP, LORs, passport, and academic transcripts.",
+      "visaOverview": "Student Visa (formerly Tier 4). Requires CAS letter, financial proof (28-day funds rule), and TB certificate.",
+      "scholarshipInfo": "Chevening, Commonwealth, GREAT scholarships, and university merit discounts up to £5,000 - £10,000.",
+      "workOpportunities": "20 hours/week during term time and full-time during holidays. Min wage ~£11.44/hr.",
+      "postStudyOptions": "2-Year Graduate Route Post-Study Work Visa (3 years for PhD).",
+      "generalSafety": "Safe and multicultural society with robust campus security and NHS healthcare access.",
+      "drinkingWaterGuidance": "High quality tap water safe for direct drinking across all cities.",
+      "officialVisaLink": "https://www.gov.uk/student-visa",
+      "officialUniversityLink": "https://www.study-uk.britishcouncil.org",
+      "published": true,
+      "order": 1
+    },
+    {
+      "id": "cnt_usa",
+      "name": "United States",
+      "code": "US",
+      "flag": "🇺🇸",
+      "coverImage": "https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?auto=format&fit=crop&w=1200&q=80",
+      "description": "Global leader in technology, research, and innovation with flexible curriculum and extensive STEM OPT post-study work authorization.",
+      "capital": "Washington, D.C.",
+      "majorCities": [
+        "New York",
+        "Boston",
+        "Chicago",
+        "San Francisco",
+        "Dallas",
+        "Seattle"
+      ],
+      "currency": "US Dollar (USD)",
+      "currencyCode": "USD",
+      "timeZone": "EST / CST / MST / PST (UTC-4 to UTC-8)",
+      "mainLanguage": "English",
+      "studyLevels": [
+        "Bachelor of Science / Arts (4 Years)",
+        "Master of Science (1.5 - 2 Years)",
+        "MBA",
+        "PhD"
+      ],
+      "intakes": [
+        "Fall (August / September)",
+        "Spring (January)",
+        "Summer (May - Limited)"
+      ],
+      "entryRequirements": "16 years of education (12+4) preferred for Master; 12+3 evaluated case-by-case. GPA 3.0+ on 4.0 scale.",
+      "englishRequirements": "TOEFL iBT 80-100, IELTS 6.5-7.0, or Duolingo 110-125.",
+      "applicationProcess": "University portals, I-20 issuance upon financial affidavit verification, DS-160, and in-person visa interview.",
+      "visaOverview": "F-1 Student Visa. Requires SEVIS fee payment, I-20, and demonstrated non-immigrant intent.",
+      "scholarshipInfo": "Graduate Assistantships (GA, TA, RA), departmental merit scholarships, and tuition fee remissions.",
+      "workOpportunities": "On-campus work up to 20 hours/week during semesters; CPT internships after one academic year.",
+      "postStudyOptions": "1-Year OPT + 2-Year STEM OPT extension (total 36 months of work authorization in STEM disciplines).",
+      "generalSafety": "Campus safety departments, emergency blue light systems, and safe suburban college towns.",
+      "drinkingWaterGuidance": "Municipal tap water is strictly tested and safe for drinking in most regions.",
+      "officialVisaLink": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+      "officialUniversityLink": "https://educationusa.state.gov",
+      "published": true,
+      "order": 2
+    },
+    {
+      "id": "cnt_canada",
+      "name": "Canada",
+      "code": "CA",
+      "flag": "🇨🇦",
+      "coverImage": "https://images.unsplash.com/photo-1517935703635-2719054546db?auto=format&fit=crop&w=1200&q=80",
+      "description": "High standard of living, welcoming immigration policies, affordable public universities, and clear post-graduation work permit (PGWP) pathways.",
+      "capital": "Ottawa",
+      "majorCities": [
+        "Toronto",
+        "Vancouver",
+        "Montreal",
+        "Calgary",
+        "Edmonton",
+        "Ottawa"
+      ],
+      "currency": "Canadian Dollar (CAD)",
+      "currencyCode": "CAD",
+      "timeZone": "UTC-3.5 to UTC-8",
+      "mainLanguage": "English & French",
+      "studyLevels": [
+        "Post-Graduate Certificate / Diploma (1-2 Years)",
+        "Master's Degree",
+        "Bachelor's Degree"
+      ],
+      "intakes": [
+        "Fall (September)",
+        "Winter (January)",
+        "Spring/Summer (May)"
+      ],
+      "entryRequirements": "Min 55%-65% in relevant qualification; evaluated by designated learning institutions (DLI).",
+      "englishRequirements": "IELTS Academic overall 6.0-6.5 (min 6.0 in all bands) or PTE Academic 60+.",
+      "applicationProcess": "LOA (Letter of Acceptance) from DLI, Provincial Attestation Letter (PAL) where required, GIC investment account.",
+      "visaOverview": "Study Permit. Requires GIC ($20,635 CAD living cost standard), tuition fee payment, medical exam, and police certificate.",
+      "scholarshipInfo": "Vanier CGS, university entrance awards, and research assistant stipends.",
+      "workOpportunities": "Up to 24 hours/week off-campus during study semesters; full-time during breaks.",
+      "postStudyOptions": "Post-Graduation Work Permit (PGWP) up to 3 years depending on program duration and university level.",
+      "generalSafety": "One of the safest countries globally with universal public order and high diversity acceptance.",
+      "drinkingWaterGuidance": "Pristine tap water safe for drinking throughout Canada.",
+      "officialVisaLink": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html",
+      "officialUniversityLink": "https://www.educanada.ca",
+      "published": true,
+      "order": 3
+    },
+    {
+      "id": "cnt_australia",
+      "name": "Australia",
+      "code": "AU",
+      "flag": "🇦🇺",
+      "coverImage": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=1200&q=80",
+      "description": "World top 100 Group of Eight universities, exceptional lifestyle, high minimum wage, and streamlined post-study work rights.",
+      "capital": "Canberra",
+      "majorCities": [
+        "Sydney",
+        "Melbourne",
+        "Brisbane",
+        "Perth",
+        "Adelaide"
+      ],
+      "currency": "Australian Dollar (AUD)",
+      "currencyCode": "AUD",
+      "timeZone": "AEST / ACST / AWST (UTC+8 to UTC+10)",
+      "mainLanguage": "English",
+      "studyLevels": [
+        "Bachelor's Degree (3-4 Years)",
+        "Master's Degree (1.5-2 Years)",
+        "Graduate Diploma"
+      ],
+      "intakes": [
+        "Semester 1 (February/March)",
+        "Semester 2 (July)",
+        "Trimester 3 (November - Selected)"
+      ],
+      "entryRequirements": "Min 60%-70% in previous qualification with Genuine Student (GS) assessment clearance.",
+      "englishRequirements": "IELTS 6.5 (min 6.0) or PTE 58-64 for postgraduate study.",
+      "applicationProcess": "University application, GTE/GS assessment, eCoE issuance, OSHC health insurance purchase.",
+      "visaOverview": "Subclass 500 Student Visa. Requires eCoE, OSHC, biometric submission, and financial capability evidence.",
+      "scholarshipInfo": "Australia Awards, Destination Australia regional grants, and university vice-chancellor scholarships.",
+      "workOpportunities": "48 hours per fortnight during study terms and unlimited hours during vacations. Min wage ~AUD 24.10/hr.",
+      "postStudyOptions": "Temporary Graduate Visa (Subclass 485) offering 2 to 4 years post-study work rights (extended in regional areas).",
+      "generalSafety": "Exceptional safety ratings with high public health standards and student support services.",
+      "drinkingWaterGuidance": "Clean tap water safe for drinking everywhere.",
+      "officialVisaLink": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "officialUniversityLink": "https://www.studyaustralia.gov.au",
+      "published": true,
+      "order": 4
+    },
+    {
+      "id": "cnt_germany",
+      "name": "Germany",
+      "code": "DE",
+      "flag": "🇩🇪",
+      "coverImage": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1200&q=80",
+      "description": "Zero or low tuition fees at public universities, world-class engineering, industry hubs, and strong demand for STEM specialists.",
+      "capital": "Berlin",
+      "majorCities": [
+        "Munich",
+        "Berlin",
+        "Frankfurt",
+        "Stuttgart",
+        "Hamburg",
+        "Aachen"
+      ],
+      "currency": "Euro (EUR)",
+      "currencyCode": "EUR",
+      "timeZone": "CET / CEST (UTC+1 / UTC+2)",
+      "mainLanguage": "German (English taught programs widely available for Masters)",
+      "studyLevels": [
+        "Master of Science / Engineering",
+        "Bachelor's Degree",
+        "Doctorate"
+      ],
+      "intakes": [
+        "Winter Semester (September/October - Major)",
+        "Summer Semester (March/April)"
+      ],
+      "entryRequirements": "Good academic percentage (min 65%+ or German grade 2.5), APS Certificate mandatory for Indian students.",
+      "englishRequirements": "IELTS 6.5+ or TOEFL 90+ for English medium programs. German A1/A2 recommended for everyday life.",
+      "applicationProcess": "APS verification in India, Uni-Assist or direct university application, admission letter, blocked account opening.",
+      "visaOverview": "National Visa (Type D). Requires APS Certificate, Blocked Account (~€11,208/yr), and statutory health insurance.",
+      "scholarshipInfo": "DAAD Scholarships, Deutschlandstipendium, and Erasmus+ mobility grants.",
+      "workOpportunities": "140 full days or 280 half days per calendar year. High demand in student tech jobs (Werkstudent).",
+      "postStudyOptions": "18-month Jobseeker / Post-study residence permit with fast-track permanent residency options.",
+      "generalSafety": "One of the most orderly and secure European nations with comprehensive social safety.",
+      "drinkingWaterGuidance": "Strictly monitored mineral-rich tap water, 100% safe for drinking.",
+      "officialVisaLink": "https://india.diplo.de/in-en/service/-/2558664",
+      "officialUniversityLink": "https://www.daad.de/en",
+      "published": true,
+      "order": 5
+    },
+    {
+      "id": "cnt_ireland",
+      "name": "Ireland",
+      "code": "IE",
+      "flag": "🇮🇪",
+      "coverImage": "https://images.unsplash.com/photo-1549918864-48ac978761a4?auto=format&fit=crop&w=1200&q=80",
+      "description": "European tech capital hosting Google, Meta, Apple, Pfizer, and Stripe, with a 2-year post-study work visa for Master graduates.",
+      "capital": "Dublin",
+      "majorCities": [
+        "Dublin",
+        "Cork",
+        "Galway",
+        "Limerick"
+      ],
+      "currency": "Euro (EUR)",
+      "currencyCode": "EUR",
+      "timeZone": "GMT / IST (UTC+0 / UTC+1)",
+      "mainLanguage": "English",
+      "studyLevels": [
+        "Master's Degree (1 Year)",
+        "Bachelor's Degree (3-4 Years)"
+      ],
+      "intakes": [
+        "Autumn (September - Major)",
+        "Spring (January/February - Selected)"
+      ],
+      "entryRequirements": "Min 60%-65% in Bachelor degree from recognized institutions.",
+      "englishRequirements": "IELTS 6.5 (min 6.0), PTE 63, or Duolingo 110-120.",
+      "applicationProcess": "Direct university portal, CV, SOP, letters of reference, and financial proof.",
+      "visaOverview": "Irish Study Visa. Demonstrating funds (€10,000+), private medical insurance, and police clearance.",
+      "scholarshipInfo": "Government of Ireland International Education Scholarship (GOI-IES) and university merit awards (€2,000 - €5,000).",
+      "workOpportunities": "20 hours/week during academic terms and 40 hours/week during June-September and winter break.",
+      "postStudyOptions": "Third Level Graduate Scheme providing 2 years post-study work permit for Level 9 Master graduates.",
+      "generalSafety": "Consistently ranked in the top 10 most peaceful and friendly nations in the Global Peace Index.",
+      "drinkingWaterGuidance": "Safe drinking water available across urban and suburban municipal systems.",
+      "officialVisaLink": "https://www.irishimmigration.ie/coming-to-study-in-ireland",
+      "officialUniversityLink": "https://www.educationinireland.com",
+      "published": true,
+      "order": 6
+    },
+    {
+      "id": "cnt_france",
+      "name": "France",
+      "code": "FR",
+      "flag": "🇫🇷",
+      "coverImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80",
+      "description": "Top-ranked Grandes Écoles and Business Schools, affordable public fees, subsidized housing (CAF), and 5-year Schengen alumni visas.",
+      "capital": "Paris",
+      "majorCities": [
+        "Paris",
+        "Lyon",
+        "Toulouse",
+        "Grenoble",
+        "Lille",
+        "Marseille"
+      ],
+      "currency": "Euro (EUR)",
+      "currencyCode": "EUR",
+      "timeZone": "CET / CEST (UTC+1 / UTC+2)",
+      "mainLanguage": "French (Hundreds of English-taught Master programs)",
+      "studyLevels": [
+        "Grandes Écoles Master in Management (MIM)",
+        "MSc Specialty Programs",
+        "Bachelor"
+      ],
+      "intakes": [
+        "September / October (Major)",
+        "January / February (Spring)"
+      ],
+      "entryRequirements": "Bachelor degree with 55%+ marks; interviews common for business and engineering schools.",
+      "englishRequirements": "IELTS 6.0-6.5 or university interview waiver.",
+      "applicationProcess": "Campus France (Études en France) procedure, academic interview, and VFS visa appointment.",
+      "visaOverview": "Long-stay student visa (VLS-TS). Housing certificate and proof of €615/month living expenses.",
+      "scholarshipInfo": "Charpak Scholarship, Eiffel Excellence Program, and Franco-Indian mobility grants.",
+      "workOpportunities": "Authorized to work up to 964 hours per year (~60% of normal full-time work year).",
+      "postStudyOptions": "2-Year APS/RECE jobseeker permit for Master graduates, plus eligibility for a 5-year short-stay circulation visa.",
+      "generalSafety": "High standard of living with subsidized healthcare and public transit.",
+      "drinkingWaterGuidance": "High quality tap water completely safe for drinking everywhere.",
+      "officialVisaLink": "https://france-visas.gouv.fr",
+      "officialUniversityLink": "https://www.campusfrance.org",
+      "published": true,
+      "order": 7
+    },
+    {
+      "id": "cnt_singapore",
+      "name": "Singapore",
+      "code": "SG",
+      "flag": "🇸🇬",
+      "coverImage": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=80",
+      "description": "Asia’s premier global education and financial hub, close proximity to India, ultra-modern infrastructure, and top-tier global rankings.",
+      "capital": "Singapore",
+      "majorCities": [
+        "Singapore"
+      ],
+      "currency": "Singapore Dollar (SGD)",
+      "currencyCode": "SGD",
+      "timeZone": "SGT (UTC+8)",
+      "mainLanguage": "English",
+      "studyLevels": [
+        "Master's Degree (1-1.5 Years)",
+        "Bachelor's Degree",
+        "Executive Education"
+      ],
+      "intakes": [
+        "August (Major)",
+        "January (Selected)"
+      ],
+      "entryRequirements": "Top academic credentials (first-class marks for autonomous universities like NUS / NTU / SMU).",
+      "englishRequirements": "IELTS 6.5+ or TOEFL 90+.",
+      "applicationProcess": "University admissions followed by Student Pass application through ICA SOLAR system.",
+      "visaOverview": "Student’s Pass issued by the Immigration & Checkpoints Authority (ICA).",
+      "scholarshipInfo": "Singapore MOE Tuition Grant (bond requirement applies) and university endowment fellowships.",
+      "workOpportunities": "Part-time work permitted for full-time students at government-approved autonomous universities.",
+      "postStudyOptions": "Long-Term Visit Pass (LTVP) for 1 year to seek employment upon graduation.",
+      "generalSafety": "Recognized as one of the safest and cleanest metropolitan environments worldwide.",
+      "drinkingWaterGuidance": "World-class tap water safe for direct consumption from any tap.",
+      "officialVisaLink": "https://www.ica.gov.sg/reside/student-pass",
+      "officialUniversityLink": "https://www.moe.gov.sg",
+      "published": true,
+      "order": 8
+    },
+    {
+      "id": "cnt_nz",
+      "name": "New Zealand",
+      "code": "NZ",
+      "flag": "🇳🇿",
+      "coverImage": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=1200&q=80",
+      "description": "Picturesque landscape, 100% of universities ranked in top 3% worldwide, friendly kiwi culture, and 3-year post-study work visas.",
+      "capital": "Wellington",
+      "majorCities": [
+        "Auckland",
+        "Wellington",
+        "Christchurch",
+        "Hamilton",
+        "Dunedin"
+      ],
+      "currency": "New Zealand Dollar (NZD)",
+      "currencyCode": "NZD",
+      "timeZone": "NZST / NZDT (UTC+12 / UTC+13)",
+      "mainLanguage": "English",
+      "studyLevels": [
+        "Master's Degree (1-2 Years)",
+        "Postgraduate Diploma (Level 8)",
+        "Bachelor's Degree (Level 7)"
+      ],
+      "intakes": [
+        "February (Major)",
+        "July (Major)"
+      ],
+      "entryRequirements": "Min 60% in previous degree from recognized Indian university.",
+      "englishRequirements": "IELTS 6.5 (min 6.0 in all bands) or PTE 58.",
+      "applicationProcess": "Offer of place, medical certificate, police clearance, and AIP (Approval in Principle) visa stage.",
+      "visaOverview": "Fee Paying Student Visa. Proof of living funds (NZ$ 20,000/yr) and tuition payment after AIP.",
+      "scholarshipInfo": "Manaaki New Zealand Scholarships and university international excellence awards.",
+      "workOpportunities": "20 hours/week during study terms and full-time during breaks. Min wage ~NZD 23.15/hr.",
+      "postStudyOptions": "Post-Study Work Visa up to 3 years for Master and Bachelor graduates.",
+      "generalSafety": "Peaceful, green, and universally ranked among the top 5 safest countries in the world.",
+      "drinkingWaterGuidance": "Pure alpine-filtered tap water safe for drinking everywhere.",
+      "officialVisaLink": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/fee-paying-student-visa",
+      "officialUniversityLink": "https://www.studywithnewzealand.govt.nz",
+      "published": true,
+      "order": 9
+    },
+    {
+      "id": "cnt_uae",
+      "name": "United Arab Emirates",
+      "code": "AE",
+      "flag": "🇦🇪",
+      "coverImage": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
+      "description": "Fast-growing education hub hosting top branch campuses (Birmingham, Heriot-Watt, Wollongong, Curtin) with 0% income tax on earnings.",
+      "capital": "Abu Dhabi",
+      "majorCities": [
+        "Dubai",
+        "Abu Dhabi",
+        "Sharjah"
+      ],
+      "currency": "UAE Dirham (AED)",
+      "currencyCode": "AED",
+      "timeZone": "GST (UTC+4)",
+      "mainLanguage": "English & Arabic",
+      "studyLevels": [
+        "Bachelor's Degree (3-4 Years)",
+        "Master's Degree (1-2 Years)",
+        "MBA"
+      ],
+      "intakes": [
+        "September (Major)",
+        "January (Spring)"
+      ],
+      "entryRequirements": "55%-65% in recognized qualifying examinations.",
+      "englishRequirements": "IELTS 6.0-6.5 or equivalent university assessment.",
+      "applicationProcess": "Direct university registration followed by institutional student residency visa sponsorship.",
+      "visaOverview": "1-Year renewable Student Residence Visa sponsored directly by the academic institution.",
+      "scholarshipInfo": "University academic excellence awards offering 20% to 50% tuition reduction.",
+      "workOpportunities": "Part-time student internships permissible through Dubai Creative Clusters Authority (DCCA) permits.",
+      "postStudyOptions": "Green Visa (5-year residency) for skilled graduates or employment-sponsored residency permits.",
+      "generalSafety": "Ranked among the safest countries in the world with strict civil laws and 24/7 security.",
+      "drinkingWaterGuidance": "Desalinated tap water is treated; bottled/filtered water is commonly preferred for taste.",
+      "officialVisaLink": "https://u.ae/en/information-and-services/education/higher-education/student-visa",
+      "officialUniversityLink": "https://www.khda.gov.ae",
+      "published": true,
+      "order": 10
+    },
+    {
+      "id": "cnt_malaysia",
+      "name": "Malaysia",
+      "code": "MY",
+      "flag": "🇲🇾",
+      "coverImage": "/uploads/malaysia_hospitality.svg",
+      "description": "Dynamic international education hub offering dual degree programs, world-renowned hospitality and tourism qualifications, affordable living, free food & hostel packages, and monthly stipends.",
+      "capital": "Kuala Lumpur",
+      "majorCities": [
+        "Kuala Lumpur",
+        "Penang",
+        "Johor Bahru",
+        "Selangor"
+      ],
+      "currency": "Malaysian Ringgit (MYR)",
+      "currencyCode": "MYR",
+      "timeZone": "MYT (UTC+8)",
+      "mainLanguage": "English, Malay",
+      "studyLevels": [
+        "International Degree (3 Years)",
+        "Diploma (2 Years)",
+        "Master's Degree",
+        "Hospitality Certifications"
+      ],
+      "intakes": [
+        "March / April",
+        "July / August",
+        "October / November"
+      ],
+      "entryRequirements": "10th / 12th standard or equivalent qualification. Age up to 25 years.",
+      "englishRequirements": "Basic English communication skills. Fast-track internal evaluation available.",
+      "applicationProcess": "Profile evaluation, offer letter, Education Malaysia Global Services (EMGS) visa approval letter (VAL), and arrival briefing.",
+      "visaOverview": "Student Visa (VAL) issued through EMGS with efficient and transparent processing.",
+      "scholarshipInfo": "Program-linked benefits including Free Hostel & Food plus Monthly Stipend of ₹35,000+ during industrial training.",
+      "workOpportunities": "Full placement support and structured paid industrial internships in top hospitality brands.",
+      "postStudyOptions": "International career placement opportunities across Malaysia, Singapore, and global hotel chains.",
+      "generalSafety": "Safe, friendly, multicultural destination with high student satisfaction and affordable living.",
+      "drinkingWaterGuidance": "Filtered or bottled water widely accessible and recommended for consumption.",
+      "officialVisaLink": "https://educationmalaysia.gov.my",
+      "officialUniversityLink": "https://educationmalaysia.gov.my/universities/",
+      "published": true,
+      "order": 11
+    }
+  ],
+  "courses": [
+    {
+      "id": "crs_malaysia_hospitality",
+      "name": "Hospitality & Hotel Management in Malaysia",
+      "category": "Hospitality & Tourism",
+      "subCategory": "International Degree & Diploma",
+      "duration": "2 Years (Diploma) / 3 Years (Degree)",
+      "studyLevel": "Diploma / Bachelor",
+      "indicativeFee": "Free Food & Hostel + Stipend",
+      "intakes": [
+        "Upcoming Intakes 2026",
+        "Rolling Admissions"
+      ],
+      "entryRequirements": "10th or 12th standard passed. Age eligibility up to 25 years.",
+      "englishRequirements": "Basic conversational English; no rigid IELTS barrier for eligible candidates.",
+      "careerInformation": "Front Office Executive, Guest Relations Manager, Food & Beverage Specialist, Luxury Resort Operations, Cruise Liners, and Airline Hospitality.",
+      "description": "Study Hospitality Management in Malaysia and build your career in the international hospitality industry! Features International Degree (3 Years) & Diploma (2 Years), Free Hostel & Food, Monthly Stipend ₹35,000+, and 100% Placement Support with global career opportunities.",
+      "countryIds": [
+        "cnt_malaysia"
+      ],
+      "popularSpecializations": [
+        "Hotel & Resort Operations",
+        "Front Office & Guest Relations",
+        "Food & Beverage Management",
+        "International Tourism"
+      ],
+      "published": true,
+      "order": 1
+    },
+    {
+      "id": "crs_ielts_acad",
+      "name": "IELTS Academic",
+      "category": "English / Test Preparation",
+      "subCategory": "Standardized English Exam",
+      "duration": "4 to 8 Weeks",
+      "studyLevel": "All Levels",
+      "indicativeFee": "₹8,500 – ₹14,000",
+      "intakes": [
+        "Weekly Batches (Weekday & Weekend)"
+      ],
+      "entryRequirements": "Basic English comprehension. Diagnostic assessment provided on Day 1.",
+      "englishRequirements": "Target Bands: 6.5 to 8.0+",
+      "careerInformation": "Mandatory proof of English proficiency for university admissions in UK, Canada, Australia, Ireland, USA, and Europe.",
+      "description": "Comprehensive preparation covering Reading, Writing (Task 1 & 2), Listening, and Speaking mock tests with certified trainers and individual feedback.",
+      "countryIds": [
+        "cnt_uk",
+        "cnt_canada",
+        "cnt_australia",
+        "cnt_germany",
+        "cnt_ireland",
+        "cnt_usa",
+        "cnt_nz"
+      ],
+      "universityIds": [],
+      "published": true,
+      "order": 1
+    },
+    {
+      "id": "crs_pte_acad",
+      "name": "PTE Academic",
+      "category": "English / Test Preparation",
+      "subCategory": "Computer-Based English Exam",
+      "duration": "4 to 6 Weeks",
+      "studyLevel": "All Levels",
+      "indicativeFee": "₹8,500 – ₹12,500",
+      "intakes": [
+        "Flexible Timings / Fast-Track"
+      ],
+      "entryRequirements": "Basic computer literacy and basic English grammar.",
+      "englishRequirements": "Target Score: 58 to 79+",
+      "careerInformation": "Widely accepted for study and migration visas in Australia, UK, New Zealand, and Canada.",
+      "description": "AI-evaluated test training focusing on pronunciation, oral fluency, typing speed, template mastery, and real exam simulations.",
+      "countryIds": [
+        "cnt_australia",
+        "cnt_uk",
+        "cnt_canada",
+        "cnt_nz",
+        "cnt_ireland"
+      ],
+      "universityIds": [],
+      "published": true,
+      "order": 2
+    },
+    {
+      "id": "crs_toefl_ibt",
+      "name": "TOEFL iBT",
+      "category": "English / Test Preparation",
+      "subCategory": "American English Standard",
+      "duration": "6 Weeks",
+      "studyLevel": "All Levels",
+      "indicativeFee": "₹9,500 – ₹14,000",
+      "intakes": [
+        "Monthly Batches"
+      ],
+      "entryRequirements": "Intermediate English skills.",
+      "englishRequirements": "Target Score: 90 to 110+",
+      "careerInformation": "Primary choice for top US universities, Ivy League programs, and competitive global scholarships.",
+      "description": "Intensive practice on academic lectures, note-taking, integrated writing tasks, and audio comprehension.",
+      "countryIds": [
+        "cnt_usa",
+        "cnt_germany",
+        "cnt_singapore",
+        "cnt_canada"
+      ],
+      "universityIds": [],
+      "published": true,
+      "order": 3
+    },
+    {
+      "id": "crs_oet",
+      "name": "OET (Occupational English Test)",
+      "category": "English / Test Preparation",
+      "subCategory": "Healthcare English Exam",
+      "duration": "6 to 10 Weeks",
+      "studyLevel": "Healthcare Professionals",
+      "indicativeFee": "₹12,000 – ₹18,000",
+      "intakes": [
+        "Bi-weekly Batches"
+      ],
+      "entryRequirements": "Nursing, Medicine, Pharmacy or Physiotherapy qualification.",
+      "englishRequirements": "Target: Grade B (350+ points in all sub-tests)",
+      "careerInformation": "Requirement for NHS UK and Australian healthcare registration for doctors and nurses.",
+      "description": "Specialized healthcare communication training with medical role-plays, patient consultation scenarios, and referral letter writing.",
+      "countryIds": [
+        "cnt_uk",
+        "cnt_ireland",
+        "cnt_australia",
+        "cnt_nz"
+      ],
+      "universityIds": [],
+      "published": true,
+      "order": 4
+    },
+    {
+      "id": "crs_german_lang",
+      "name": "German Language (A1 – B2 Levels)",
+      "category": "Foreign Languages",
+      "subCategory": "European Language Training",
+      "duration": "8 to 12 Weeks per Level",
+      "studyLevel": "Beginner to Upper Intermediate",
+      "indicativeFee": "₹12,000 – ₹20,000 per level",
+      "intakes": [
+        "First Monday of every month"
+      ],
+      "entryRequirements": "No prior knowledge needed for A1. Subsequent levels require completion certificate.",
+      "englishRequirements": "Conducted in English/Tamil to German.",
+      "careerInformation": "Essential for tuition-free public universities in Germany, internships, and integration into the German engineering workforce.",
+      "description": "Certified Goethe-Institut curriculum preparation covering grammar, conversational fluency, listening comprehension, and official exam preparation.",
+      "countryIds": [
+        "cnt_germany"
+      ],
+      "universityIds": [],
+      "published": true,
+      "order": 5
+    },
+    {
+      "id": "crs_french_lang",
+      "name": "French Language (DELF A1 – B1)",
+      "category": "Foreign Languages",
+      "subCategory": "European Language Training",
+      "duration": "8 to 10 Weeks per Level",
+      "studyLevel": "Beginner to Intermediate",
+      "indicativeFee": "₹11,000 – ₹18,000 per level",
+      "intakes": [
+        "Monthly Batches"
+      ],
+      "entryRequirements": "Open to all students.",
+      "englishRequirements": "N/A",
+      "careerInformation": "Extra PR points for Canada Express Entry, essential for daily life and internships in France and French-speaking Europe.",
+      "description": "Interactive conversational French, phonetics, everyday dialogue, and DELF international exam preparation.",
+      "countryIds": [
+        "cnt_france",
+        "cnt_canada"
+      ],
+      "universityIds": [],
+      "published": true,
+      "order": 6
+    },
+    {
+      "id": "crs_msc_cs_uk",
+      "name": "MSc Computer Science / Software Engineering",
+      "category": "Overseas Academic Courses",
+      "subCategory": "Computer Science & IT",
+      "duration": "1 Year Full-Time",
+      "studyLevel": "Postgraduate (Master)",
+      "indicativeFee": "£15,000 – £26,000 / year",
+      "intakes": [
+        "September",
+        "January"
+      ],
+      "entryRequirements": "Min 60% in B.Tech / B.E / BCA / B.Sc Computer Science or relevant technical degree.",
+      "englishRequirements": "IELTS 6.5 (min 6.0 in all bands) or PTE 60+.",
+      "careerInformation": "Careers in Software Engineering, Cloud Computing, DevOps, and Systems Architecture with 2-year Graduate Route visa.",
+      "description": "Advanced curriculum covering distributed systems, cloud architecture, algorithm engineering, and real-world industrial capstone projects.",
+      "countryIds": [
+        "cnt_uk",
+        "cnt_ireland"
+      ],
+      "universityIds": [
+        "uni_manchester",
+        "uni_birmingham"
+      ],
+      "published": true,
+      "order": 7
+    },
+    {
+      "id": "crs_ms_ai_ds_usa",
+      "name": "MS in Artificial Intelligence & Data Science",
+      "category": "Overseas Academic Courses",
+      "subCategory": "Computer Science & IT",
+      "duration": "2 Years",
+      "studyLevel": "Postgraduate (Master)",
+      "indicativeFee": "$28,000 – $48,000 / year",
+      "intakes": [
+        "Fall (August)",
+        "Spring (January)"
+      ],
+      "entryRequirements": "4-year Bachelor degree in Engineering, Math, CS or Physical Sciences. GRE optional/required depending on institution.",
+      "englishRequirements": "TOEFL 90+ or IELTS 7.0.",
+      "careerInformation": "Qualifies for 3-Year STEM OPT extension. Roles include Machine Learning Engineer, Data Scientist, and AI Researcher.",
+      "description": "Rigorous coursework in deep learning, neural networks, computer vision, natural language processing, and high-performance computing.",
+      "countryIds": [
+        "cnt_usa"
+      ],
+      "universityIds": [
+        "uni_arizona"
+      ],
+      "published": true,
+      "order": 8
+    },
+    {
+      "id": "crs_mba_finance_uk",
+      "name": "MBA (Global Business / Finance)",
+      "category": "Overseas Academic Courses",
+      "subCategory": "Business & Management",
+      "duration": "1 Year Full-Time",
+      "studyLevel": "Postgraduate (Master)",
+      "indicativeFee": "£16,000 – £28,000 / year",
+      "intakes": [
+        "September",
+        "January",
+        "May"
+      ],
+      "entryRequirements": "Bachelor degree in any discipline with min 55%-60%. Work experience preferred (0-2 years accepted for early-career MBAs).",
+      "englishRequirements": "IELTS 6.5 (min 6.0) or PTE 62.",
+      "careerInformation": "Corporate management, investment banking, consultancy, product management, and strategic operations.",
+      "description": "Accredited management program blending strategic finance, leadership, data analytics for decision-makers, and cross-border trade.",
+      "countryIds": [
+        "cnt_uk"
+      ],
+      "universityIds": [
+        "uni_birmingham"
+      ],
+      "published": true,
+      "order": 9
+    },
+    {
+      "id": "crs_msc_cyber_ger",
+      "name": "MSc Cyber Security & Network Systems",
+      "category": "Overseas Academic Courses",
+      "subCategory": "Computer Science & IT",
+      "duration": "2 Years",
+      "studyLevel": "Postgraduate (Master)",
+      "indicativeFee": "€0 – €3,000 / semester (Public Universities)",
+      "intakes": [
+        "Winter (October)",
+        "Summer (April)"
+      ],
+      "entryRequirements": "Min 65% in B.E / B.Tech Computer Science or Information Technology with valid APS Certificate.",
+      "englishRequirements": "IELTS 6.5 or TOEFL 90.",
+      "careerInformation": "High demand in German manufacturing, automotive, and banking sectors with 18-month post-study visa.",
+      "description": "Covers offensive and defensive security, cryptography, network forensics, secure software lifecycle, and ethical hacking.",
+      "countryIds": [
+        "cnt_germany"
+      ],
+      "universityIds": [
+        "uni_munich_tech"
+      ],
+      "published": true,
+      "order": 10
+    },
+    {
+      "id": "crs_nursing_aus",
+      "name": "Bachelor / Master of Nursing (Practice)",
+      "category": "Overseas Academic Courses",
+      "subCategory": "Healthcare & Nursing",
+      "duration": "2 to 3 Years",
+      "studyLevel": "Undergraduate / Postgraduate",
+      "indicativeFee": "AUD 32,000 – 42,000 / year",
+      "intakes": [
+        "February",
+        "July"
+      ],
+      "entryRequirements": "Relevant qualification with high marks in Biology/Sciences. NMBA background check.",
+      "englishRequirements": "IELTS Academic 7.0 (min 7.0 in each band) or PTE Academic 65+ (min 65 in each).",
+      "careerInformation": "Direct registration pathway with AHPRA for Registered Nurse (RN) status with high demand across all Australian states.",
+      "description": "Comprehensive clinical laboratory simulations and 800+ hours of accredited hospital placements in acute and community healthcare.",
+      "countryIds": [
+        "cnt_australia"
+      ],
+      "universityIds": [
+        "uni_deakin"
+      ],
+      "published": true,
+      "order": 11
+    }
+  ],
+  "universities": [
+    {
+      "id": "uni_manchester",
+      "name": "University of Manchester",
+      "countryId": "cnt_uk",
+      "city": "Manchester",
+      "logo": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=400&q=80",
+      "image": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1000&q=80",
+      "description": "Prestigious Russell Group member consistently ranked in the global top 35, known for ground-breaking discoveries and high graduate employability.",
+      "indicativeFee": "£22,000 – £34,000 / year",
+      "intakes": [
+        "September"
+      ],
+      "entryRequirements": "First Class Bachelor degree (65%-75% depending on tier of Indian university).",
+      "englishRequirements": "IELTS 6.5 - 7.0 (no band less than 6.0).",
+      "scholarshipInfo": "Global Futures Scholarships up to £10,000 for Indian students.",
+      "accommodationInfo": "Guaranteed university halls for international postgraduates submitting by deadline.",
+      "applicationProcess": "Online application with academic transcripts, two academic references, and personal statement.",
+      "officialWebsite": "https://www.manchester.ac.uk",
+      "officialAdmissionsLink": "https://www.manchester.ac.uk/study/international",
+      "courseIds": [
+        "crs_msc_cs_uk"
+      ],
+      "published": true,
+      "order": 1
+    },
+    {
+      "id": "uni_birmingham",
+      "name": "University of Birmingham",
+      "countryId": "cnt_uk",
+      "city": "Birmingham",
+      "logo": "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=400&q=80",
+      "image": "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=80",
+      "description": "Historic red-brick university with a beautiful green campus, world top 100 standing, and extensive industry partnerships across the UK.",
+      "indicativeFee": "£20,000 – £28,000 / year",
+      "intakes": [
+        "September",
+        "January"
+      ],
+      "entryRequirements": "Min 60% in recognized Bachelor degree.",
+      "englishRequirements": "IELTS 6.5 (min 6.0) or PTE 60+.",
+      "scholarshipInfo": "Lord Mayor of Birmingham and International Dean Awards (£3,000 - £6,000).",
+      "accommodationInfo": "Over 5,000 student rooms located within walking distance of the main Edgbaston campus.",
+      "applicationProcess": "Direct online submission through the university postgraduate portal.",
+      "officialWebsite": "https://www.birmingham.ac.uk",
+      "officialAdmissionsLink": "https://www.birmingham.ac.uk/international",
+      "courseIds": [
+        "crs_msc_cs_uk",
+        "crs_mba_finance_uk"
+      ],
+      "published": true,
+      "order": 2
+    },
+    {
+      "id": "uni_arizona",
+      "name": "Arizona State University",
+      "countryId": "cnt_usa",
+      "city": "Tempe / Phoenix, Arizona",
+      "logo": "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&w=400&q=80",
+      "image": "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&w=1000&q=80",
+      "description": "Ranked #1 in the US for Innovation ahead of MIT and Stanford, home to world-class engineering, computing, and business research.",
+      "indicativeFee": "$32,000 – $46,000 / year",
+      "intakes": [
+        "Fall (August)",
+        "Spring (January)"
+      ],
+      "entryRequirements": "Min 3.0 GPA in 4-year degree (or 3-year degree with strong NAAC A grade).",
+      "englishRequirements": "TOEFL 80+, IELTS 6.5+, or Duolingo 105+.",
+      "scholarshipInfo": "New American University Scholar awards offering $5,000 to $12,000 tuition remission annually.",
+      "accommodationInfo": "Modern residential communities with dining halls, sports complexes, and transport.",
+      "applicationProcess": "ASU Application or Common App with official transcripts and financial guarantee.",
+      "officialWebsite": "https://www.asu.edu",
+      "officialAdmissionsLink": "https://admission.asu.edu/international",
+      "courseIds": [
+        "crs_ms_ai_ds_usa"
+      ],
+      "published": true,
+      "order": 3
+    },
+    {
+      "id": "uni_munich_tech",
+      "name": "Technical University of Munich (TUM)",
+      "countryId": "cnt_germany",
+      "city": "Munich, Bavaria",
+      "logo": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=400&q=80",
+      "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1000&q=80",
+      "description": "Germany’s top-ranked technical university and University of Excellence, globally renowned for cutting-edge engineering and computer science.",
+      "indicativeFee": "€2,000 – €3,000 / semester (Nominal international tuition fees)",
+      "intakes": [
+        "Winter (October)",
+        "Summer (April)"
+      ],
+      "entryRequirements": "High academic distinction in Bachelor degree with curriculum compatibility assessment & valid APS certificate.",
+      "englishRequirements": "IELTS 6.5 or TOEFL 88+ for English degree tracks.",
+      "scholarshipInfo": "DAAD study scholarships and Bavarian Government international grants.",
+      "accommodationInfo": "Studentenwerk Munich student housing and private shared apartments (WG).",
+      "applicationProcess": "Uni-Assist VPD preliminary check followed by TUMonline application.",
+      "officialWebsite": "https://www.tum.de",
+      "officialAdmissionsLink": "https://www.tum.de/en/studies/international-students",
+      "courseIds": [
+        "crs_msc_cyber_ger"
+      ],
+      "published": true,
+      "order": 4
+    },
+    {
+      "id": "uni_deakin",
+      "name": "Deakin University",
+      "countryId": "cnt_australia",
+      "city": "Melbourne & Geelong, Victoria",
+      "logo": "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=400&q=80",
+      "image": "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=1000&q=80",
+      "description": "World top 1% university recognized for outstanding student satisfaction, state-of-the-art health simulation centers, and strong industry linkages.",
+      "indicativeFee": "AUD 34,000 – 42,000 / year",
+      "intakes": [
+        "Trimester 1 (March)",
+        "Trimester 2 (July)",
+        "Trimester 3 (November)"
+      ],
+      "entryRequirements": "60%-65% in recognized qualifying Bachelor degree with genuine student credentials.",
+      "englishRequirements": "IELTS 7.0 overall for health/nursing programs.",
+      "scholarshipInfo": "Deakin International Scholarship (25% tuition fee waiver) and Vice-Chancellor’s Meritorious 50% Scholarship.",
+      "accommodationInfo": "On-campus student residences in Melbourne Burwood and Geelong Waurn Ponds.",
+      "applicationProcess": "Direct application with certified academic transcripts, SOP, and passport copy.",
+      "officialWebsite": "https://www.deakin.edu.au",
+      "officialAdmissionsLink": "https://www.deakin.edu.au/international-students",
+      "courseIds": [
+        "crs_nursing_aus"
+      ],
+      "published": true,
+      "order": 5
+    }
+  ],
+  "services": [
+    {
+      "id": "srv_counselling",
+      "title": "Personalised Study Abroad Counselling",
+      "category": "Admissions & Profile",
+      "shortDescription": "One-on-one evaluation of your academic profile, budget, career aspirations, and destination preferences.",
+      "fullDescription": "Our experienced counsellors analyze your marks, study gap, financial plan, and career vision to recommend realistic and rewarding international education paths.",
+      "icon": "Compass",
+      "inclusions": [
+        "Detailed profile audit",
+        "Destination feasibility analysis",
+        "Budget planning & ROI calculation",
+        "Parent orientation meeting"
+      ],
+      "published": true,
+      "order": 1
+    },
+    {
+      "id": "srv_course_country",
+      "title": "Country & Course Selection",
+      "category": "Strategy",
+      "shortDescription": "Discover the exact programs that align with high-demand industries and post-study work regulations.",
+      "fullDescription": "We help you navigate complex global intake cycles, credit requirements, curriculum depth, and regional job market prospects.",
+      "icon": "Globe",
+      "inclusions": [
+        "Curriculum comparison",
+        "Intake timeline mapping",
+        "PR and post-study work outlook",
+        "Specialization matching"
+      ],
+      "published": true,
+      "order": 2
+    },
+    {
+      "id": "srv_university_shortlist",
+      "title": "University & College Shortlisting",
+      "category": "Admissions",
+      "shortDescription": "A balanced portfolio of Dream, Target, and Safe universities tailored to your specific grades and budget.",
+      "fullDescription": "Avoid blind applications. We compile an optimized list of institutions where your chances of admission and scholarships are highest.",
+      "icon": "GraduationCap",
+      "inclusions": [
+        "3-tier shortlisting matrix",
+        "Tuition fee and living cost breakdown",
+        "Campus location & climate analysis",
+        "Alumni feedback review"
+      ],
+      "published": true,
+      "order": 3
+    },
+    {
+      "id": "srv_ielts_language",
+      "title": "IELTS, PTE & Language Training",
+      "category": "Test Prep",
+      "shortDescription": "Results-driven test preparation with certified faculty, real mock simulations, and individual doubt sessions.",
+      "fullDescription": "Master the test with personalized strategies for speaking fluency, academic writing structure, listening concentration, and time management.",
+      "icon": "BookOpen",
+      "inclusions": [
+        "Diagnostic initial test",
+        "Comprehensive study material",
+        "Weekly timed full-length mocks",
+        "One-on-one speaking reviews"
+      ],
+      "published": true,
+      "order": 4
+    },
+    {
+      "id": "srv_admission_sop",
+      "title": "Admission Guidance & Document Review",
+      "category": "Applications",
+      "shortDescription": "Complete guidance on Statement of Purpose (SOP), Letters of Recommendation (LOR), and university applications.",
+      "fullDescription": "We assist in structuring authentic, compelling personal statements that highlight your genuine passion and academic resilience.",
+      "icon": "FileText",
+      "inclusions": [
+        "SOP drafting & critique",
+        "LOR structure guidelines",
+        "Academic CV formatting",
+        "Application portal monitoring"
+      ],
+      "published": true,
+      "order": 5
+    },
+    {
+      "id": "srv_visa_guidance",
+      "title": "Visa Application & Mock Interviews",
+      "category": "Immigration Support",
+      "shortDescription": "Meticulous document verification, financial proof structuring, and rigorous visa interview preparation.",
+      "fullDescription": "Navigate strict embassy guidelines with confidence. We review every affidavit, tax document, loan sanction letter, and sponsor detail.",
+      "icon": "ShieldCheck",
+      "inclusions": [
+        "Complete visa file checklist",
+        "Financial documentation guidance",
+        "Mock visa interview drills",
+        "Biometrics & appointment scheduling"
+      ],
+      "published": true,
+      "order": 6
+    },
+    {
+      "id": "srv_scholarship_loan",
+      "title": "Scholarship & Education Loan Guidance",
+      "category": "Funding",
+      "shortDescription": "Identify merit scholarships and connect with leading nationalized banks and NBFCs for education loans.",
+      "fullDescription": "We assist students in drafting scholarship essays and obtaining competitive collateral and non-collateral education loan sanctions.",
+      "icon": "Coins",
+      "inclusions": [
+        "Scholarship eligibility matching",
+        "Essay editing for scholarship applications",
+        "Education loan sanction assistance",
+        "Forex & remittance advice"
+      ],
+      "published": true,
+      "order": 7
+    },
+    {
+      "id": "srv_travel_esim",
+      "title": "Travel, Accommodation & eSIM Connectivity",
+      "category": "Departure & Logistics",
+      "shortDescription": "Secure student housing, flight ticket planning with extra baggage, and international eSIM cards before takeoff.",
+      "fullDescription": "In partnership with Happy Journey Holidays and global telecommunication providers, we ensure a seamless and safe journey from doorstep to campus.",
+      "icon": "Plane",
+      "inclusions": [
+        "Verified student accommodation options",
+        "Partner travel assistance",
+        "Instant international eSIM cards",
+        "Pre-departure packing checklist"
+      ],
+      "published": true,
+      "order": 8
+    },
+    {
+      "id": "srv_post_arrival",
+      "title": "Post-Arrival Student Support",
+      "category": "On-Ground Support",
+      "shortDescription": "Continuous guidance during your initial settling-in period in your new host country.",
+      "fullDescription": "From opening your foreign bank account to registering with local police/health services, our relationship continues even after you land.",
+      "icon": "Users",
+      "inclusions": [
+        "Overseas student bank account setup",
+        "Local transport card guidance",
+        "National insurance/tax number assistance",
+        "Senior student networking"
+      ],
+      "published": true,
+      "order": 9
+    }
+  ],
+  "studentEssentials": [
+    {
+      "id": "ess_accom",
+      "title": "International Student Accommodation Guide",
+      "category": "Accommodation",
+      "summary": "Comparing On-Campus Halls, Purpose-Built Student Accommodation (PBSA), and Private Shared Flats.",
+      "details": "On-campus dorms provide convenience and guaranteed bills included; PBSA (like Unite Students, Scape, Campus Living Villages) offer en-suite rooms and gyms; private shared flats (via portals like SpareRoom, WG-Gesucht, Flatmates) offer greater independence and lower costs.",
+      "checklists": [
+        "Book 2-3 months prior to arrival",
+        "Check tenancy deposit protection rules",
+        "Verify whether heating and Wi-Fi are included",
+        "Never transfer money to unverified private listings"
+      ],
+      "published": true,
+      "order": 1
+    },
+    {
+      "id": "ess_costs",
+      "title": "Living Costs & Monthly Budgeting",
+      "category": "Living Costs",
+      "summary": "Realistic monthly breakdown for housing, groceries, utilities, transit, and mobile in major destination countries.",
+      "details": "UK: £900 - £1,300/mo (London ~£1,400+); Germany: €850 - €1,100/mo; Canada: CAD 1,400 - 1,800/mo; Australia: AUD 1,600 - 2,200/mo; USA: $1,200 - $1,800/mo.",
+      "checklists": [
+        "Budget for initial bond/deposit (usually 4-6 weeks rent)",
+        "Use student discount cards (UNiDAYS, Student Beans)",
+        "Cook at home to save up to 60% on food expenses"
+      ],
+      "published": true,
+      "order": 2
+    },
+    {
+      "id": "ess_sim",
+      "title": "Mobile Connectivity & International eSIMs",
+      "category": "SIM & Internet",
+      "summary": "How to stay connected the moment your flight touches down without exorbitant roaming bills.",
+      "details": "Getting a physical SIM at foreign airport kiosks often costs 3x more. Setting up an international eSIM before departure allows immediate WhatsApp connectivity for parents upon landing.",
+      "checklists": [
+        "Verify if your phone is carrier-unlocked and eSIM-compatible",
+        "Install the QR profile before departure in India",
+        "Activate data roaming on the eSIM profile upon landing"
+      ],
+      "published": true,
+      "order": 3
+    },
+    {
+      "id": "ess_banking",
+      "title": "Overseas Banking, Forex & Money Transfers",
+      "category": "Banking & Forex",
+      "summary": "Opening digital student accounts (Revolut, Monzo, N26, Commonwealth Bank) and safe remittance.",
+      "details": "Carry a multi-currency Forex card loaded with initial funds (£1,000 / €1,000 / $1,500) for your first 2 weeks. Open a local student bank account using your university confirmation letter and passport.",
+      "checklists": [
+        "Carry minimal cash (approx. 200-300 units of destination currency)",
+        "Keep Forex card separate from physical passport",
+        "Use authorized RBI-compliant remittance channels for tuition fees"
+      ],
+      "published": true,
+      "order": 4
+    },
+    {
+      "id": "ess_predep",
+      "title": "Pre-Departure Flight & Packing Checklist",
+      "category": "Checklist",
+      "summary": "Essential documents, prescription medications, attire, and adapters to pack in your hand luggage.",
+      "details": "Always keep your passport, visa grant letter, university CAS/I-20/LOA, original degree certificates, TB certificate, and prescription letters in your cabin bag. Never check in essential legal documents.",
+      "checklists": [
+        "Passport with at least 6 months validity",
+        "Original marksheets & transcripts in sealed envelope",
+        "Universal power adapter and power bank",
+        "30-day supply of personal medications with doctor prescription"
+      ],
+      "published": true,
+      "order": 5
+    }
+  ],
+  "scholarships": [
+    {
+      "id": "sch_chevening",
+      "name": "Chevening Scholarships (UK)",
+      "countryId": "cnt_uk",
+      "eligibility": "Outstanding leaders with minimum 2 years of work experience and an undergraduate degree.",
+      "amount": "Fully-funded (Tuition fee, monthly stipend, flights, visa fees)",
+      "deadline": "Early November annually for following academic year",
+      "requirements": "Unconditional university offer, leadership essays, 2 professional references.",
+      "applicationProcess": "Apply online via the official Chevening online portal; shortlisted candidates attend an in-person interview at the British High Commission in India.",
+      "officialLink": "https://www.chevening.org/scholarship/india",
+      "notes": "Highly prestigious and competitive. Requires a commitment to return to India for minimum 2 years post-study.",
+      "published": true
+    },
+    {
+      "id": "sch_daad",
+      "name": "DAAD Scholarships (Germany)",
+      "countryId": "cnt_germany",
+      "eligibility": "Graduates with high academic distinction and relevant degree.",
+      "amount": "€934 per month stipend + health insurance subsidy + travel allowance",
+      "deadline": "Varies between September and October annually",
+      "requirements": "Bachelor degree completed within the last 6 years with above-average grades.",
+      "applicationProcess": "Apply through the DAAD scholarship database with project proposal and academic CV.",
+      "officialLink": "https://www.daad.in/en/find-funding/scholarship-database",
+      "notes": "Tuition is already free at public universities; this scholarship covers your complete living expenses.",
+      "published": true
+    },
+    {
+      "id": "sch_aus_awards",
+      "name": "Australia Awards Scholarships",
+      "countryId": "cnt_australia",
+      "eligibility": "Indian citizens applying for eligible Master programs matching national development priorities.",
+      "amount": "Full tuition fees, return air travel, establishment allowance, living stipend",
+      "deadline": "End of April annually",
+      "requirements": "Academic merit, relevant employment experience, and leadership capability.",
+      "applicationProcess": "Online submission via OASIS (Online Australia Awards Scholarships Information System).",
+      "officialLink": "https://www.dfat.gov.au/people-to-people/australia-awards",
+      "notes": "Encourages applications from diverse academic and geographical backgrounds.",
+      "published": true
+    },
+    {
+      "id": "sch_birmingham_india",
+      "name": "University of Birmingham India Outstanding Achievement Scholarship",
+      "countryId": "cnt_uk",
+      "universityId": "uni_birmingham",
+      "eligibility": "Indian students holding an offer for an eligible postgraduate program with 70%+ undergraduate marks.",
+      "amount": "£4,000 to £6,000 tuition fee discount",
+      "deadline": "30 June for September intake",
+      "requirements": "Hold an academic offer and submit a 500-word statement demonstrating excellence.",
+      "applicationProcess": "Direct application through the Birmingham international funding portal.",
+      "officialLink": "https://www.birmingham.ac.uk/funding",
+      "notes": "Deducted directly from your tuition fee invoice upon enrollment.",
+      "published": true
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq_1",
+      "category": "Admission",
+      "question": "Do you guarantee admission or visas?",
+      "answer": "No. Athmanathan Study Abroad upholds complete transparency and ethical counselling: we never guarantee admissions, scholarships, or visa approvals. Final decisions are made solely by universities and immigration authorities. We guide you meticulously to maximize the quality and accuracy of your application.",
+      "published": true,
+      "order": 1
+    },
+    {
+      "id": "faq_2",
+      "category": "IELTS",
+      "question": "Is IELTS mandatory for studying abroad?",
+      "answer": "While many top universities in the UK, USA, Australia, and Canada prefer IELTS/PTE, several universities offer Medium of Instruction (MOI) waivers if your entire degree was conducted in English with high English marks in Class 12. We assess your profile to identify options with and without English testing.",
+      "published": true,
+      "order": 2
+    },
+    {
+      "id": "faq_3",
+      "category": "Study Gap",
+      "question": "Can I study abroad if I have a study gap after graduation?",
+      "answer": "Yes. Universities and visa authorities accept study gaps provided they are justified with genuine documentation, such as employment letters, pay slips, bank statements, certifications, or medical records. We help you present your career timeline clearly.",
+      "published": true,
+      "order": 3
+    },
+    {
+      "id": "faq_4",
+      "category": "Living Costs",
+      "question": "How much money do I need to show for my student visa?",
+      "answer": "Financial requirements vary strictly by country: UK requires 9 months of living expenses (~£9,207 outside London or £12,006 in London) held for 28 consecutive days; Germany requires a Blocked Account of ~€11,208; Canada requires a GIC of CAD $20,635; Australia requires proof of AUD 29,710 for one year. We provide exact guidance based on current official embassy criteria.",
+      "published": true,
+      "order": 4
+    },
+    {
+      "id": "faq_5",
+      "category": "eSIM",
+      "question": "Why should I buy an eSIM before leaving India?",
+      "answer": "An international eSIM lets you connect to local mobile networks the instant your flight touches down. You avoid expensive international roaming fees and can immediately call parents on WhatsApp and order an Uber from the airport without hunting for an airport SIM counter.",
+      "published": true,
+      "order": 5
+    },
+    {
+      "id": "faq_6",
+      "category": "Dependants",
+      "question": "Can I bring my spouse or children while studying abroad?",
+      "answer": "Rules have tightened across destinations: UK allows dependants only for postgraduate research programs (like PhD); Canada restricts open work permits for spouses primarily to Master/PhD and specific professional programs; Australia and Germany continue to have designated family reunion / dependant provisions under specific criteria. We review your family situation individually.",
+      "published": true,
+      "order": 6
+    },
+    {
+      "id": "faq_7",
+      "category": "Happy Journey Holidays",
+      "question": "What is the relationship with Happy Journey Holidays?",
+      "answer": "Happy Journey Holidays is our associated travel and support partner. They assist our students with competitive airfares, extra baggage allowances for international students, airport transit, and travel insurance. Both brands maintain separate operations and distinct service areas.",
+      "published": true,
+      "order": 7
+    }
+  ],
+  "posters": [
+    {
+      "id": "pst_malaysia_hospitality",
+      "title": "Malaysia Hospitality Management – Study Abroad",
+      "description": "Study Hospitality Management in Malaysia and build your career in the international hospitality industry! International Degree & Diploma options, Free Hostel & Food, Monthly Stipend ₹35,000+, 100% Placement Support, International career opportunities. Eligibility: Age up to 25.",
+      "imageUrl": "/uploads/malaysia_hospitality.svg",
+      "countryId": "cnt_malaysia",
+      "category": "Admissions",
+      "date": "2026-09-28",
+      "ctaText": "Enquire for Malaysia Hospitality",
+      "customWhatsAppMsg": "Hello Athmanathan Study Abroad, I saw your Malaysia Hospitality Management poster (Free Food & Hostel, ₹35,000+ Stipend, 100% Placement). Please provide eligibility and admission details.",
+      "published": true,
+      "order": 1
+    },
+    {
+      "id": "pst_uk_sept_2026",
+      "title": "UK September 2026 Admissions Open",
+      "description": "Applications now open for Russell Group & Top UK Universities. 1-Year Masters & 2-Year Post Study Work Visa. Free Profile Evaluation!",
+      "imageUrl": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
+      "countryId": "cnt_uk",
+      "category": "Admissions Announcement",
+      "date": "2026-09-15",
+      "ctaText": "Enquire for UK Admissions",
+      "customWhatsAppMsg": "Hello Athmanathan Study Abroad, I saw your UK September Admissions poster and would like to evaluate my profile.",
+      "published": true,
+      "order": 2
+    },
+    {
+      "id": "pst_ielts_batch",
+      "title": "New IELTS & German Language Fast-Track Batches",
+      "description": "Target Band 7.5+ in IELTS or German A1-B1 certification for tuition-free German universities. Weekday and weekend batches available.",
+      "imageUrl": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
+      "countryId": "cnt_germany",
+      "category": "Test Prep & Language",
+      "date": "2026-09-18",
+      "ctaText": "Join Test Prep Batch",
+      "customWhatsAppMsg": "Hello Athmanathan Study Abroad, I am interested in joining your upcoming IELTS / German language batch.",
+      "published": true,
+      "order": 3
+    },
+    {
+      "id": "pst_aus_nursing",
+      "title": "Australia Nursing & Healthcare Special Admission Drive",
+      "description": "PR Pathways, AHPRA Registration Guidance, and Scholarship Opportunities for B.Sc & M.Sc Nursing Aspirants in Australia.",
+      "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
+      "countryId": "cnt_australia",
+      "category": "Speciality Course",
+      "date": "2026-09-20",
+      "ctaText": "Enquire for Nursing in Australia",
+      "customWhatsAppMsg": "Hello Athmanathan Study Abroad, I am a nursing student interested in studying and working in Australia.",
+      "published": true,
+      "order": 4
+    }
+  ],
+  "events": [
+    {
+      "id": "evt_webinar_uk",
+      "title": "UK Master Admissions & Visa Guidance Webinar",
+      "date": "2026-10-04",
+      "time": "6:30 PM – 8:00 PM IST",
+      "location": "Live Zoom Interactive Session",
+      "description": "Learn about course shortlisting, 28-day financial rules, CAS timelines, and post-study work visa rights with senior education counsellors.",
+      "posterUrl": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80",
+      "ctaText": "Register Free on WhatsApp",
+      "published": true
+    },
+    {
+      "id": "evt_fair_counselling",
+      "title": "Personalised Overseas Counselling Day",
+      "date": "2026-10-18",
+      "time": "10:00 AM – 5:30 PM IST",
+      "location": "Athmanathan Study Abroad Office (By Appointment)",
+      "description": "Bring your academic certificates for spot profile evaluations, tuition fee estimations, and scholarship eligibility matching.",
+      "posterUrl": "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=800&q=80",
+      "ctaText": "Book Counselling Slot",
+      "published": true
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "tst_1",
+      "studentName": "Karthik Raja S.",
+      "photoUrl": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=400&q=80",
+      "course": "MSc Advanced Computer Science",
+      "university": "University of Birmingham",
+      "country": "United Kingdom",
+      "intake": "September 2025",
+      "quote": "Athmanathan Study Abroad gave me completely honest advice. They never promised fake shortcuts; instead, they helped refine my SOP and financial documents so my visa arrived within 11 days. Highly recommend for Indian students!",
+      "published": true
+    },
+    {
+      "id": "tst_2",
+      "studentName": "Priya Meenakshi",
+      "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+      "course": "Master of Nursing Practice",
+      "university": "Deakin University",
+      "country": "Australia",
+      "intake": "February 2026",
+      "quote": "My dream was to pursue healthcare in Australia. The guidance on IELTS preparation (got 7.5 overall) and clinical requirements was top tier. The team supported me right until I settled into my Melbourne accommodation.",
+      "published": true
+    },
+    {
+      "id": "tst_3",
+      "studentName": "Arjun Subramanian",
+      "photoUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+      "course": "M.Sc. Automotive & Clean Energy",
+      "university": "RWTH Aachen University",
+      "country": "Germany",
+      "intake": "Winter 2025",
+      "quote": "Navigating APS certificates and German blocked accounts seemed daunting. The Athmanathan counsellors guided me through every step patiently. Studying in Germany tuition-free has transformed my career.",
+      "published": true
+    }
+  ],
+  "esimProducts": [
+    {
+      "id": "esim_uk_eu",
+      "destination": "United Kingdom & Europe (33 Countries)",
+      "countryCode": "GB-EU",
+      "flag": "🇬🇧 🇪🇺",
+      "plans": [
+        {
+          "id": "plan_1",
+          "dataAmount": "10 GB High Speed Data",
+          "validity": "30 Days",
+          "priceInr": 1450,
+          "description": "Includes UK phone number, incoming calls free, and full coverage across UK and EU."
+        },
+        {
+          "id": "plan_2",
+          "dataAmount": "25 GB High Speed Data",
+          "validity": "30 Days",
+          "priceInr": 2150,
+          "description": "Most popular plan for new students. Includes hotspot tethering and 4G/5G speed."
+        },
+        {
+          "id": "plan_3",
+          "dataAmount": "50 GB High Speed Data",
+          "validity": "60 Days",
+          "priceInr": 3600,
+          "description": "Extended stay plan with extensive data allowance for initial apartment hunting."
+        }
+      ],
+      "features": [
+        "Instant QR activation via email & WhatsApp",
+        "Keeps your Indian WhatsApp number active",
+        "Connects automatically to EE / Vodafone UK",
+        "5G high-speed connectivity",
+        "Tethering / Mobile Hotspot enabled"
+      ],
+      "installationGuide": "Go to Settings > Mobile Data / Cellular > Add eSIM > Scan the provided QR code while connected to Wi-Fi. Label as \"Secondary / Travel\".",
+      "activationGuide": "Turn on Data Roaming on the eSIM line only after your aircraft touches down in the UK or Europe.",
+      "compatibleDevices": [
+        "iPhone XS, XR, 11, 12, 13, 14, 15, 16 series",
+        "Samsung Galaxy S20, S21, S22, S23, S24 series & Z Flip/Fold",
+        "Google Pixel 3a, 4, 5, 6, 7, 8, 9 series",
+        "OnePlus 11, 12 series & modern eSIM-enabled tablets"
+      ],
+      "published": true,
+      "order": 1
+    },
+    {
+      "id": "esim_usa_can",
+      "destination": "USA & Canada",
+      "countryCode": "US-CA",
+      "flag": "🇺🇸 🇨🇦",
+      "plans": [
+        {
+          "id": "plan_us_1",
+          "dataAmount": "15 GB 5G Data",
+          "validity": "30 Days",
+          "priceInr": 1850,
+          "description": "High-speed AT&T and T-Mobile roaming coverage across all 50 states."
+        },
+        {
+          "id": "plan_us_2",
+          "dataAmount": "Unlimited 5G Data (Fair Usage)",
+          "validity": "30 Days",
+          "priceInr": 2950,
+          "description": "Unlimited data and hotspot support for intensive study and maps navigation."
+        }
+      ],
+      "features": [
+        "Coverage on T-Mobile & AT&T networks",
+        "Instant QR setup before departure",
+        "Keeps WhatsApp active seamlessly",
+        "No contract / No SSN required"
+      ],
+      "installationGuide": "Scan QR code in India 12-24 hours prior to departure. Turn line off until departure.",
+      "activationGuide": "Turn on the eSIM line and toggle Data Roaming ON upon landing at US/Canada airports.",
+      "compatibleDevices": [
+        "All eSIM enabled iPhones",
+        "Samsung flagship devices with eSIM",
+        "Google Pixel devices"
+      ],
+      "published": true,
+      "order": 2
+    },
+    {
+      "id": "esim_aus_nz",
+      "destination": "Australia & New Zealand",
+      "countryCode": "AU-NZ",
+      "flag": "🇦🇺 🇳🇿",
+      "plans": [
+        {
+          "id": "plan_au_1",
+          "dataAmount": "20 GB High Speed Data",
+          "validity": "30 Days",
+          "priceInr": 1750,
+          "description": "Operates on Telstra and Optus nationwide 4G/5G networks."
+        },
+        {
+          "id": "plan_au_2",
+          "dataAmount": "45 GB High Speed Data",
+          "validity": "30 Days",
+          "priceInr": 2650,
+          "description": "Generous data volume for students streaming lectures and maps."
+        }
+      ],
+      "features": [
+        "Operates on Australia’s leading networks",
+        "Immediate connection on arrival",
+        "No passport upload queue at airport"
+      ],
+      "installationGuide": "Scan QR code in Settings > Mobile Data before departure.",
+      "activationGuide": "Turn data roaming ON once landed in Sydney, Melbourne, Brisbane, Perth, or Auckland.",
+      "compatibleDevices": [
+        "eSIM unlocked smartphones (Apple, Samsung, Google, Motorola)"
+      ],
+      "published": true,
+      "order": 3
+    }
+  ]
+}

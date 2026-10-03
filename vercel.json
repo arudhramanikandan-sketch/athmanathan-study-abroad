@@ -3,14 +3,6 @@
   "version": 2,
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "functions": {
-    "api/*.ts": {
-      "includeFiles": "data/**"
-    },
-    "api/**/*.ts": {
-      "includeFiles": "data/**"
-    }
-  },
   "rewrites": [
     {
       "source": "/api/(.*)",
