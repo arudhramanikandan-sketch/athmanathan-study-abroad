@@ -56,6 +56,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     { id: 'home', label: 'Home', icon: GraduationCap },
     { id: 'countries', label: 'Countries', icon: Globe },
     { id: 'courses', label: 'Courses', icon: BookOpen },
+    { id: 'vibe-dubai', label: 'VIBE Dubai', icon: Award },
     { id: 'universities', label: 'Universities', icon: Building2 },
     { id: 'irs', label: 'IRS Hub', icon: Sparkles },
     { id: 'services', label: 'Services', icon: Compass },
@@ -193,15 +194,20 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Desktop Navigation Links */}
           <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5" aria-label="Main Navigation">
-            {allNavLinks.slice(0, 6).map((link) => {
+            {allNavLinks.slice(0, 7).map((link) => {
               const isActive = currentActive === link.id;
               const isIrs = link.id === 'irs';
+              const isVibe = link.id === 'vibe-dubai';
               return (
                 <button
                   key={link.id}
                   onClick={() => handleNavClick(link.id)}
                   className={`px-3 py-1.5 text-xs xl:text-sm font-medium rounded-lg transition-all whitespace-nowrap cursor-pointer ${
-                    isIrs
+                    isVibe
+                      ? isActive
+                        ? 'text-white bg-amber-600 font-bold shadow-xs border border-amber-500'
+                        : 'text-amber-900 bg-amber-50 hover:bg-amber-100 font-bold border border-amber-200'
+                      : isIrs
                       ? isActive
                         ? 'text-white bg-indigo-900 font-bold shadow-xs border border-indigo-700'
                         : 'text-indigo-900 bg-indigo-50/80 hover:bg-indigo-100/90 font-bold border border-indigo-200'
@@ -210,7 +216,12 @@ export const Navbar: React.FC<NavbarProps> = ({
                       : 'text-slate-700 hover:text-blue-900 hover:bg-slate-100/80'
                   }`}
                 >
-                  {isIrs ? (
+                  {isVibe ? (
+                    <span className="flex items-center gap-1">
+                      <Award className="w-3.5 h-3.5 text-amber-600" />
+                      <span>{link.label}</span>
+                    </span>
+                  ) : isIrs ? (
                     <span className="flex items-center gap-1">
                       <Sparkles className="w-3.5 h-3.5 text-indigo-600" />
                       <span>{link.label}</span>
@@ -237,7 +248,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   className="absolute right-0 mt-2 w-52 bg-white rounded-xl shadow-xl border border-slate-200 py-2 z-50 animate-in fade-in slide-in-from-top-2 duration-150"
                   onMouseLeave={() => setMoreDropdownOpen(false)}
                 >
-                  {allNavLinks.slice(6).map((link) => {
+                  {allNavLinks.slice(7).map((link) => {
                     const Icon = link.icon;
                     const isActive = currentActive === link.id;
                     return (

@@ -59,6 +59,7 @@ export const HomePage: React.FC<HomePageProps> = ({
   const mainPageMenuItems = [
     { id: 'countries', label: 'Countries', desc: `${countries?.length || 15}+ Global Hubs`, icon: Globe, highlight: 'border-blue-500/30 bg-blue-950/40 hover:border-blue-400' },
     { id: 'courses', label: 'Courses', desc: `${courses?.length || 100}+ Disciplines`, icon: BookOpen, highlight: 'border-indigo-500/30 bg-indigo-950/40 hover:border-indigo-400' },
+    { id: 'vibe-dubai', label: 'VIBE Dubai', desc: '11 Diplomas & Pathways', icon: Award, highlight: 'border-amber-500/40 bg-amber-950/30 hover:border-amber-400' },
     { id: 'universities', label: 'Universities', desc: `${universities?.length || 40}+ Verified`, icon: Building2, highlight: 'border-cyan-500/30 bg-cyan-950/40 hover:border-cyan-400' },
     { id: 'services', label: 'Admissions & Visa', desc: 'A-Z Guidance', icon: Compass, highlight: 'border-sky-500/30 bg-sky-950/40 hover:border-sky-400' },
     { id: 'ielts-languages', label: 'IELTS & Languages', desc: 'Expert Training', icon: Award, highlight: 'border-amber-500/30 bg-amber-950/40 hover:border-amber-400' },

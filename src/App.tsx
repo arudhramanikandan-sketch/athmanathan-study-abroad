@@ -22,6 +22,7 @@ import { PostersPage } from './pages/PostersPage';
 import { FaqPage } from './pages/FaqPage';
 import { ContactPage } from './pages/ContactPage';
 import { IrsStudyAbroadPage } from './pages/IrsStudyAbroadPage';
+import { VibeDubaiPage } from './pages/VibeDubaiPage';
 import { LegalModal } from './pages/LegalModal';
 import { AdminPortal } from './pages/AdminPortal';
 
@@ -39,6 +40,7 @@ export default function App() {
   const [selectedCountryId, setSelectedCountryId] = useState<string | null>(null);
   const [selectedCourseId, setSelectedCourseId] = useState<string | null>(null);
   const [selectedUniId, setSelectedUniId] = useState<string | null>(null);
+  const [selectedVibeCourseId, setSelectedVibeCourseId] = useState<string | null>(null);
 
   // Modal triggers
   const [enquiryContext, setEnquiryContext] = useState<string | null>(null);
@@ -93,6 +95,8 @@ export default function App() {
         'about',
         'countries',
         'courses',
+        'vibe-dubai',
+        'vibe-education',
         'universities',
         'services',
         'ielts-languages',
@@ -107,6 +111,13 @@ export default function App() {
 
       if (hash === 'irs' || hash === 'irs-study-abroad' || cleanPath === 'irs' || cleanPath === 'irs-study-abroad') {
         setActivePage('irs');
+      } else if (
+        hash === 'vibe-dubai' ||
+        hash === 'vibe-education' ||
+        cleanPath === 'vibe-dubai' ||
+        cleanPath === 'vibe-education'
+      ) {
+        setActivePage('vibe-dubai');
       } else if (validPages.includes(hash)) {
         setActivePage(hash);
       } else if (validPages.includes(cleanPath)) {
@@ -316,6 +327,7 @@ export default function App() {
             onSelectCountry={(id: string) => {
               setSelectedCountryId(id);
             }}
+            onNavigate={handleNavigate}
           />
         )}
 
@@ -328,6 +340,7 @@ export default function App() {
             onClearSelectedCourse={() => setSelectedCourseId(null)}
             onOpenEnquiry={handleOpenEnquiry}
             onOpenCompare={() => handleOpenCompare('courses')}
+            onNavigate={handleNavigate}
           />
         )}
 
@@ -340,6 +353,7 @@ export default function App() {
             onClearSelectedUni={() => setSelectedUniId(null)}
             onOpenEnquiry={handleOpenEnquiry}
             onOpenCompare={() => handleOpenCompare('universities')}
+            onNavigate={handleNavigate}
           />
         )}
 
@@ -424,6 +438,14 @@ export default function App() {
               setSelectedUniId(id);
               handleNavigate('universities');
             }}
+          />
+        )}
+
+        {(activePage === 'vibe-dubai' || activePage === 'vibe-education') && (
+          <VibeDubaiPage
+            settings={settings}
+            initialCourseId={selectedVibeCourseId}
+            onNavigate={handleNavigate}
           />
         )}
       </main>

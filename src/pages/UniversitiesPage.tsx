@@ -23,6 +23,7 @@ interface UniversitiesPageProps {
   onClearSelectedUni?: () => void;
   onOpenEnquiry: (context?: string) => void;
   onOpenCompare: () => void;
+  onNavigate?: (page: string) => void;
 }
 
 export const UniversitiesPage: React.FC<UniversitiesPageProps> = ({
@@ -33,6 +34,7 @@ export const UniversitiesPage: React.FC<UniversitiesPageProps> = ({
   onClearSelectedUni,
   onOpenEnquiry,
   onOpenCompare,
+  onNavigate,
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCountryId, setSelectedCountryId] = useState<string>('All');
@@ -66,10 +68,25 @@ export const UniversitiesPage: React.FC<UniversitiesPageProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
-          <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-blue-700 block mb-1">
-              Global Higher Education Institutions
-            </span>
+          <div className="flex-1">
+            <div className="flex items-center justify-between gap-3 mb-1">
+              <span className="text-xs font-bold uppercase tracking-wider text-blue-700 block">
+                Global Higher Education Institutions
+              </span>
+              <button
+                type="button"
+                onClick={() => {
+                  if (onNavigate) onNavigate('home');
+                  else if (typeof window !== 'undefined' && window.history.length > 1) window.history.back();
+                }}
+                className="md:hidden inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-colors border border-slate-200 cursor-pointer"
+                title="Close and return to Home"
+                aria-label="Close"
+              >
+                <X className="w-4 h-4 text-slate-500" />
+                <span>Close</span>
+              </button>
+            </div>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 font-serif">
               Universities & Colleges
             </h1>
@@ -78,13 +95,26 @@ export const UniversitiesPage: React.FC<UniversitiesPageProps> = ({
             </p>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 shrink-0">
             <button
               onClick={onOpenCompare}
-              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-blue-900 text-white text-xs font-bold hover:bg-blue-800 transition-colors shadow-xs"
+              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-blue-900 text-white text-xs font-bold hover:bg-blue-800 transition-colors shadow-xs cursor-pointer"
             >
               <Scale className="w-4 h-4 text-amber-400" />
               <span>Compare Universities</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                if (onNavigate) onNavigate('home');
+                else if (typeof window !== 'undefined' && window.history.length > 1) window.history.back();
+              }}
+              className="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 hover:text-slate-900 text-xs font-bold transition-colors shadow-2xs cursor-pointer"
+              title="Close and return to Home"
+              aria-label="Close"
+            >
+              <X className="w-4 h-4 text-slate-500" />
+              <span>Close</span>
             </button>
           </div>
         </div>

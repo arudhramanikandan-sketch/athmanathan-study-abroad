@@ -1,0 +1,658 @@
+You are an expert full-stack web developer and UI/UX designer. Update my EXISTING Athmanathan Study Abroad website to add a complete VIBE Education Dubai course catalogue with individual course detail pages, transparent course fees, entry requirements, durations, visa process, terms and conditions, refund policy, and WhatsApp enquiry integration.
+
+IMPORTANT:
+- Work on my existing website and existing codebase.
+- Do not create a separate new website.
+- Do not change the existing website design, branding, navigation, unrelated pages, database, authentication, or other working features.
+- Do not delete or overwrite any existing content unrelated to this task.
+- Before editing, inspect the existing project structure and identify its framework, routing, existing course/package data structure, and current WhatsApp contact configuration.
+- Reuse the existing components, styles, layout, and WhatsApp number.
+- Make only the changes required for the VIBE Education course catalogue and enquiry flow.
+- Do not hardcode a new WhatsApp number. Reuse the exact WhatsApp number already configured on the current website.
+- If the existing WhatsApp number is stored in a configuration file, environment variable, database, or shared component, reuse that source.
+- Do not change the current WhatsApp number or existing enquiry destination.
+- If the number cannot be identified from the existing project, stop and ask me rather than inventing a number.
+
+==================================================
+1. MAIN OBJECTIVE
+==================================================
+
+Create a professional VIBE Education Dubai course catalogue under Athmanathan Study Abroad.
+
+Students should be able to:
+1. View all available courses.
+2. Open each course separately.
+3. Read all available course details.
+4. Understand the fee structure and payment process.
+5. Read the visa process, estimated processing time, refund policy, and terms and conditions.
+6. Select their preferred course and study track.
+7. Click "Apply Now" or "Enquire on WhatsApp".
+8. Send their course enquiry directly to the existing Athmanathan Study Abroad WhatsApp number.
+
+The WhatsApp enquiry must automatically include the selected course name, course level, study track, and the student's entered details.
+
+This is an enquiry and lead-generation system. Do not collect payments or automatically submit applications to VIBE Education unless an existing approved integration already exists.
+
+==================================================
+2. COURSE CATALOGUE
+==================================================
+
+Create a responsive course listing page with individual detail pages or expandable course sections.
+
+Each course must have its own separate details page or independently expandable section.
+
+Every course page must contain these fields wherever information is available:
+
+- Course title
+- Course code, if available
+- Course level
+- Course overview
+- Course duration
+- Study track
+- Entry requirements
+- Course fee in USD
+- Credits
+- Study mode
+- Assessment method
+- Awarding body and qualification title, where verified
+- Progression opportunities
+- Visa process
+- Visa fee
+- Estimated visa processing time
+- Tuition payment terms
+- Visa rejection refund policy
+- Other applicable terms and conditions
+- Apply Now button
+- Enquire on WhatsApp button
+
+Do not combine all courses into one generic page. Every course must be individually selectable and have its own details.
+
+==================================================
+3. COURSES TO INCLUDE
+==================================================
+
+Create separate course entries for:
+
+LEVEL 3 — FOUNDATION PROGRAMMES
+
+1. Accounting and Business / Accountancy
+2. Business Management
+3. Information Technology
+
+LEVEL 4 & 5 — DIPLOMA PROGRAMMES
+
+4. Accounting and Business
+5. Business Management
+6. Information Technology
+7. Tourism and Hospitality Management
+8. Health and Social Care Management
+
+LEVEL 5 PROGRAMMES
+
+9. Education and Training
+10. Psychology — Fast Track only, as listed in the supplied Academics PDF
+
+LEVEL 6 — UNIVERSITY PROGRESSION
+
+11. University Progression / Bachelor's Degree Pathway
+
+Where a course is offered in more than one track, allow the student to select the relevant track.
+
+For Level 4 & 5 programmes, display Regular Track and Fast Track where applicable.
+
+Do not show unavailable tracks as selectable options.
+
+==================================================
+4. COURSE FEES
+==================================================
+
+Use the fees stated in the signed Partnership Agreement and the VIBE Education Academics PDF.
+
+LEVEL 3:
+
+- Accounting and Business / Accountancy: USD 4,750 is the Level 3 fee listed in the Academics PDF.
+- Business Management: USD 4,750.
+- Information Technology: USD 4,750.
+
+LEVEL 4 & 5:
+
+For the following programmes:
+
+- Accounting and Business
+- Business Management
+- Information Technology
+- Tourism and Hospitality Management
+- Health and Social Care Management
+
+Display:
+
+Regular Track:
+USD 4,750 × 2 levels.
+
+Fast Track:
+USD 6,050.
+
+LEVEL 5:
+
+Education and Training:
+USD 4,750.
+
+Psychology:
+USD 6,050 — Fast Track only.
+
+LEVEL 6 — UNIVERSITY PROGRESSION:
+
+Display:
+"Starting from USD 5,000. The final fee depends on the selected university and programme."
+
+IMPORTANT FEE RULES:
+
+- Display the fee exactly as stated in the relevant source document.
+- Do not add service fees, consultation fees, registration fees, processing charges, taxes, or other amounts unless officially confirmed.
+- Do not convert USD amounts into INR automatically.
+- Do not imply that USD 4,750 × 2 means the total is USD 4,750.
+- Display Regular Track and Fast Track fees separately.
+- For Level 6, explain that the final fee depends on the university.
+- If two official sources show different fees, flag the discrepancy in the admin/configuration notes rather than silently choosing an invented value.
+- Do not show a fee for a course when the source documents do not establish its fee.
+- Do not change these course fees without my explicit instruction.
+
+==================================================
+5. COURSE DURATION AND ENTRY REQUIREMENTS
+==================================================
+
+Use the official VIBE Education website and supplied Academics PDF as the sources.
+
+Official course catalogue:
+https://www.vibeedu.com/diploma/
+
+Official FAQ:
+https://www.vibeedu.com/faq
+
+Official admission guide:
+https://www.vibeedu.com/admission-guide
+
+LEVEL 3:
+
+Accounting and Business / Accountancy:
+The website lists a 6-month duration and 60 credits for its Accountancy foundation course.
+
+Business Management:
+The website lists 12 months and 120 credits.
+
+Information Technology:
+The website lists 12 months and 60 credits.
+
+LEVEL 4 & 5:
+
+Accounting and Business:
+12 months Fast Track / 24 months Regular Track; 240 credits.
+
+Business Management:
+12 months Fast Track / 24 months Regular Track; 240 credits.
+
+Information Technology:
+Use the course-specific official page. The catalogue lists a 24-month option; confirm the available track before displaying selectable durations.
+
+Tourism and Hospitality Management:
+12 months Fast Track / 24 months Regular Track; 240 credits.
+
+Health and Social Care Management:
+12 months Fast Track / 24 months Regular Track; 240 credits.
+
+LEVEL 5:
+
+Education and Training:
+12 months; 120 credits.
+
+Psychology:
+12 months; 240 credits; Fast Track only, as shown in the official catalogue.
+
+LEVEL 6:
+
+University Progression:
+1 or 2 years, depending on the selected university and programme; 120 credits as stated in the supplied Academics PDF.
+
+ENTRY REQUIREMENTS:
+
+Use the entry requirements from each course's official page.
+
+For Level 3 Business Management and Information Technology, the official pages state open entry from age 16, with English language competency requirements potentially applicable.
+
+For Level 4 & 5 programmes, display the relevant Level 3 qualification or equivalent requirements and any applicable age or academic requirements stated on the specific course page.
+
+For Education and Training, Psychology, Health and Social Care Management, and Level 6, use only the verified course-specific requirements.
+
+Do not copy the same entry requirements to every course automatically.
+
+If an entry requirement cannot be verified, display:
+
+"Please contact Athmanathan Study Abroad to confirm the entry requirements for this course."
+
+==================================================
+6. HANDLE COURSE INFORMATION DISCREPANCIES
+==================================================
+
+The supplied Academics PDF and the official website contain some differences in course duration and credits.
+
+For example, Level 3 Accountancy and Level 3 Information Technology do not show identical credit information across all materials.
+
+Therefore:
+
+- Use the course-specific official page as the primary reference for that course's published duration and entry requirements.
+- Use the signed Partnership Agreement for the agreed partner fee structure.
+- Use the supplied Academics PDF for the programme list and stated pathway information.
+- Do not silently combine conflicting information.
+- Do not invent a final qualification title, university name, or guaranteed degree progression.
+- If a discrepancy remains unresolved, show "To be confirmed by VIBE Education" in the student-facing details.
+- Keep a clear configuration field or admin note identifying which details need confirmation.
+- Never display internal warnings or developer notes to students.
+
+==================================================
+7. VISA PROCESS AND FEES
+==================================================
+
+Every course details page must include a section titled:
+
+"Visa Process, Fees and Important Information"
+
+Use the following process based on the information provided by VIBE Education:
+
+1. Student submits an enquiry/application.
+2. The student provides basic details and the latest academic document.
+3. VIBE Education conducts an interview.
+4. If selected, the student receives an offer letter.
+5. The student pays the stated visa fee.
+6. VIBE Education processes the entry permit.
+7. Once the visa/entry permit is issued, the student pays the applicable tuition fee.
+8. The student books their flight after the required payment and travel arrangements are confirmed.
+9. Airport pickup is coordinated after the student shares the flight details.
+10. After arriving in Dubai, the student completes orientation and the applicable biometric and Emirates ID procedures.
+
+VISA FEE:
+
+Display:
+"Visa fee: USD 1,500, as communicated by VIBE Education. Please confirm the current amount and applicable payment instructions before making payment."
+
+VISA PROCESSING TIME:
+
+Display:
+"Estimated entry permit processing time: 3–7 working days after the relevant visa process begins, subject to government procedures and approval."
+
+OVERALL PROCESSING TIME:
+
+Display:
+"The overall process may take approximately 2–3 weeks if all steps proceed as planned. Actual timelines may vary depending on document verification, interview, government procedures, and individual circumstances."
+
+IMPORTANT:
+
+- Do not guarantee visa approval.
+- Do not guarantee that the visa will be issued within a fixed number of days.
+- Do not describe the visa fee as refundable in full.
+- Clearly distinguish visa processing time from the total admission process.
+- Explain that students should wait for the official offer letter and payment instructions before paying.
+- Do not accept visa or tuition payments through this new enquiry feature.
+
+==================================================
+8. VISA REJECTION REFUND POLICY
+==================================================
+
+Display this notice on every course page, close to the fee and visa information:
+
+"Visa Rejection Refund Policy
+
+According to the Partnership Agreement provided by VIBE Education, 60% of the visa fee is refundable if a visa application is rejected.
+
+The applicable refund procedure, eligibility, required documents, and processing timeline must be confirmed directly with VIBE Education before payment.
+
+Refund eligibility is subject to the official agreement and applicable VIBE Education policies."
+
+IMPORTANT:
+
+- Do not promise a 100% visa fee refund.
+- Do not claim that all visa-related expenses are refundable.
+- Do not invent a refund processing timeline.
+- Do not state that Indian students are excluded from or automatically eligible for the refund policy unless VIBE Education confirms this in writing.
+- Keep this visa rejection refund policy separate from the tuition fee withdrawal/refund policy.
+- Do not silently merge the partnership agreement's visa rejection policy with the website's general student withdrawal policy.
+
+==================================================
+9. TUITION FEE REFUND POLICY
+==================================================
+
+Add a separate section titled:
+
+"Tuition Fee Refund Policy"
+
+Official VIBE Education website:
+https://www.vibeedu.com/refund-policy
+
+The official website contains a tuition withdrawal refund schedule. However, the applicable policy may differ depending on the programme and student category.
+
+Therefore:
+
+- Do not automatically promise a tuition fee refund percentage to every applicant.
+- Do not treat the general website refund policy as identical to the visa rejection refund clause in the Partnership Agreement.
+- Clearly state that the student must review the applicable official refund policy and obtain written confirmation from VIBE Education before making payment.
+- Provide a link to the official refund policy.
+- Do not invent exceptions, refund amounts, or refund timelines.
+- If a specific programme's applicable refund policy is not verified, display:
+  "Please confirm the applicable tuition fee refund terms with VIBE Education before making payment."
+
+==================================================
+10. PAYMENT TERMS
+==================================================
+
+Display these terms on each course page:
+
+- Tuition fee is payable after the visa/entry permit is issued, according to the information provided by VIBE Education.
+- The exact tuition amount payable must be confirmed in the official offer letter or fee invoice.
+- Do not add extra fees that are not confirmed.
+- Do not collect student payments through this enquiry feature.
+- Do not imply that submitting a WhatsApp enquiry guarantees admission or visa approval.
+- Any additional compulsory charges must be confirmed by VIBE Education before the student commits to the programme.
+
+==================================================
+11. ACCOMMODATION AND AIRPORT PICKUP
+==================================================
+
+Add a section titled "Accommodation and Arrival Support".
+
+Accommodation:
+"Accommodation assistance may be available through third-party providers. Availability, monthly rent, deposits, and booking conditions must be confirmed directly before booking."
+
+Airport pickup:
+"Airport pickup can be coordinated after the student's flight details are shared with VIBE Education. Please confirm whether any additional charge applies."
+
+Do not describe accommodation or airport pickup as free unless VIBE Education confirms this in writing.
+
+Do not invent accommodation prices or deposit amounts.
+
+==================================================
+12. PLACEMENT AND CAREER SUPPORT DISCLAIMER
+==================================================
+
+Add this notice:
+
+"VIBE Education may provide CV support, interview preparation, spoken English support, and referrals to employment opportunities. However, employment, internships, and job placements are not guaranteed. Outcomes depend on student eligibility, performance, available opportunities, employer decisions, and applicable regulations."
+
+Do not advertise guaranteed employment, guaranteed internships, or guaranteed salary packages.
+
+==================================================
+13. COURSE DETAIL PAGE DESIGN
+==================================================
+
+Create a professional, responsive, modern course detail layout that matches the existing Athmanathan Study Abroad website.
+
+Each course page must include:
+
+A. Course banner
+- Course title
+- Level
+- Duration
+- Starting fee, where confirmed
+- Study track
+
+B. Course overview
+
+C. Course details
+- Duration
+- Entry requirements
+- Credits
+- Study mode
+- Assessment method
+- Awarding body
+- Qualification title
+
+D. Course fees
+- Regular Track fee
+- Fast Track fee
+- University progression fee, if applicable
+
+E. Admission process
+
+F. Visa fee and estimated processing time
+
+G. Visa rejection refund policy
+
+H. Tuition fee refund policy
+
+I. Accommodation and airport pickup information
+
+J. Progression pathway
+
+K. Placement support disclaimer
+
+L. Terms and conditions
+
+M. Apply Now button
+
+N. Enquire on WhatsApp button
+
+Add a clearly visible notice:
+"Course details, eligibility, fees, and admission are subject to confirmation by VIBE Education."
+
+Do not claim that VIBE Education is itself a university. Explain that it provides vocational training and diploma programmes, and that university progression depends on the receiving university's admission and credit-transfer requirements.
+
+==================================================
+14. APPLY NOW AND WHATSAPP ENQUIRY
+==================================================
+
+This is a critical requirement.
+
+All Apply Now and Enquire on WhatsApp buttons must use the existing WhatsApp number already configured on the current Athmanathan Study Abroad website.
+
+Do not create a new number.
+Do not replace the existing number.
+Do not redirect enquiries to VIBE Education's phone number.
+Do not send enquiries to a different brand or business.
+Do not add another public enquiry submission method.
+
+When a student clicks Apply Now:
+
+1. Open a small enquiry form or modal.
+2. Ask for:
+   - Student Full Name
+   - WhatsApp/Mobile Number
+   - Email Address (optional)
+   - Preferred Course
+   - Preferred Level
+   - Preferred Track (Regular/Fast Track, where applicable)
+   - Highest Qualification
+   - Current City and State
+   - Preferred Study Intake
+   - Additional Question (optional)
+
+3. Validate the required fields.
+4. After submission, open WhatsApp using the existing configured number.
+5. Pre-fill a properly formatted message containing the student's details and selected course.
+6. Let the student review and send the message manually.
+7. Show a clear confirmation that WhatsApp is opening.
+
+Use URL-encoded message text and the existing website's WhatsApp configuration.
+
+Suggested WhatsApp message:
+
+Hello Athmanathan Study Abroad,
+
+I would like to enquire about studying at VIBE Education, Dubai.
+
+Student Name: [Student Name]
+Mobile Number: [Mobile Number]
+Email: [Email, if provided]
+Preferred Course: [Course Name]
+Course Level: [Level]
+Preferred Track: [Regular/Fast Track]
+Highest Qualification: [Qualification]
+Current City/State: [Location]
+Preferred Intake: [Intake]
+Additional Question: [Question, if provided]
+
+Please share the admission requirements, course fees, visa process, and next steps.
+
+Thank you.
+
+IMPORTANT TECHNICAL REQUIREMENTS:
+
+- Reuse the existing WhatsApp integration or shared utility if available.
+- Encode the complete message safely.
+- Preserve the existing website number exactly.
+- If the current project has a central WhatsApp configuration, use it rather than hardcoding a number in every component.
+- Do not create a second public enquiry form that submits data to a database, email service, or third-party platform.
+- The intended public enquiry channel is WhatsApp only.
+- Do not request passport copies, sensitive identity documents, or payment details in the initial public enquiry form.
+- Do not store the student's personal information unnecessarily.
+- Make sure the WhatsApp link works on mobile devices and desktop browsers.
+
+==================================================
+15. COURSE CATALOGUE PAGE
+==================================================
+
+Create a central page titled:
+
+"Study in Dubai with VIBE Education"
+
+Subtitle:
+"Explore diploma programmes, course fees, entry requirements, and university progression options with Athmanathan Study Abroad."
+
+Display course cards grouped by:
+
+- Level 3 Foundation Programmes
+- Level 4 & 5 Diploma Programmes
+- Level 5 Programmes
+- Level 6 University Progression
+
+Each card must show:
+- Course name
+- Level
+- Duration
+- Fee, when confirmed
+- Available study tracks
+- Short description
+- View Course Details button
+- Apply Now button
+
+Add filters for:
+- Course category
+- Course level
+- Duration
+- Study track
+
+Do not display incorrect or unverified values in the filters.
+
+==================================================
+16. TERMS AND CONDITIONS
+==================================================
+
+Create a dedicated Terms and Conditions section on every course page, with the following points:
+
+1. Course information and eligibility are subject to confirmation by VIBE Education.
+2. Fees must be confirmed in the official offer letter or fee invoice.
+3. The visa fee communicated by VIBE Education is USD 1,500, subject to current confirmation.
+4. Estimated visa processing time is 3–7 working days, subject to government procedures.
+5. The overall admission process may take approximately 2–3 weeks if all steps proceed as planned.
+6. Tuition fees are payable after the visa/entry permit is issued, according to VIBE Education's stated process.
+7. The Partnership Agreement mentions a 60% visa fee refund if the visa application is rejected.
+8. Tuition fee withdrawal refunds are governed by the applicable official VIBE Education refund policy.
+9. Visa approval, admission, internships, employment, and job placements are not guaranteed.
+10. Accommodation and airport pickup costs must be confirmed before booking.
+11. University progression and degree admission depend on the receiving university's eligibility and admission requirements.
+12. Students must read the official agreement, offer letter, fee invoice, and refund terms before making payments.
+13. Athmanathan Study Abroad provides enquiry and admission guidance as an education partner; final admission, visa processing, and course delivery decisions are made by the relevant institution and authorities.
+
+Provide links to:
+- VIBE Education official website: https://www.vibeedu.com/
+- VIBE Education diploma catalogue: https://www.vibeedu.com/diploma/
+- VIBE Education FAQ: https://www.vibeedu.com/faq
+- VIBE Education refund policy: https://www.vibeedu.com/refund-policy
+
+Do not write legal guarantees or invent contractual terms.
+
+==================================================
+17. ADMIN AND MAINTENANCE
+==================================================
+
+If the existing website already has an admin panel or course-management system:
+
+- Reuse it to manage course descriptions, durations, fees, entry requirements, and progression details.
+- Do not create an insecure duplicate admin system.
+- Do not expose administrative functionality to public users.
+- Do not change existing authentication or access controls.
+
+If there is no existing course-management system, keep course information in a clearly structured, maintainable data file or existing data store.
+
+Do not add unnecessary paid services, APIs, plugins, or subscriptions.
+
+Do not introduce a new backend or database solely for WhatsApp enquiries.
+
+==================================================
+18. SEO AND ACCESSIBILITY
+==================================================
+
+Use descriptive page titles and metadata for each course.
+
+Examples:
+- Study Business Management in Dubai
+- Diploma in Accounting and Business in Dubai
+- Diploma in Information Technology in Dubai
+- Tourism and Hospitality Management in Dubai
+- Health and Social Care Management in Dubai
+- Education and Training Diploma in Dubai
+- Psychology Diploma in Dubai
+- University Progression Pathway
+
+Use accessible headings, buttons, labels, and mobile-friendly layouts.
+
+Do not make unsupported claims such as:
+- Guaranteed visa
+- Guaranteed job
+- Guaranteed university admission
+- Guaranteed salary
+- Guaranteed refund outside the stated policy
+
+==================================================
+19. TESTING REQUIREMENTS
+==================================================
+
+Before completing the work:
+
+1. Verify that every listed course opens its own details page or expandable section.
+2. Verify that every course shows its available duration, fee, eligibility, and track.
+3. Verify that the visa process and refund policies are visible.
+4. Verify that Apply Now opens the correct enquiry form.
+5. Verify that submitting the form opens WhatsApp with the selected course and student details pre-filled.
+6. Verify that the WhatsApp destination is exactly the existing website's configured number.
+7. Verify that no new WhatsApp number has been introduced.
+8. Verify that no extra public enquiry submission method has been added.
+9. Verify that the existing website's other pages and functions still work.
+10. Verify that the site is responsive on mobile, tablet, and desktop.
+11. Verify that no unconfirmed fees, durations, qualifications, or refund guarantees have been invented.
+12. Verify that all external links work.
+13. Do not claim that changes are deployed or live unless deployment has actually been completed.
+
+==================================================
+20. FINAL IMPLEMENTATION INSTRUCTIONS
+==================================================
+
+Inspect the existing code first.
+
+Then implement the VIBE Education course catalogue and individual course detail pages within the current Athmanathan Study Abroad website.
+
+Preserve all unrelated existing functionality.
+
+Reuse the existing WhatsApp number and integration.
+
+Use the supplied Partnership Agreement, Academics PDF, and official VIBE Education website as the information sources.
+
+Where information conflicts or is missing, clearly flag it for confirmation rather than inventing an answer.
+
+When finished, provide a concise implementation summary listing:
+- Files changed
+- Courses added
+- Pages or components created
+- WhatsApp integration reused
+- Any information requiring confirmation from VIBE Education
+- Any tests completed
+- Any steps still required before publishing
+
+Do not make unrelated changes.

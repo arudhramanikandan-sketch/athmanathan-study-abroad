@@ -241,6 +241,12 @@ export const Footer: React.FC<FooterProps> = ({
                 </button>
               </li>
               <li>
+                <button onClick={() => handleNav('vibe-dubai')} className="text-amber-400 hover:text-amber-300 font-semibold transition-colors flex items-center gap-1">
+                  <span>VIBE Education Dubai</span>
+                  <span className="text-[10px] px-1.5 py-0.2 rounded bg-amber-950 border border-amber-500/40 text-amber-300">Dubai</span>
+                </button>
+              </li>
+              <li>
                 <button onClick={() => handleNav('irs')} className="text-teal-400 hover:text-teal-300 font-semibold transition-colors flex items-center gap-1">
                   <span>IRS Study Abroad Hub</span>
                   <span className="text-[10px] px-1.5 py-0.2 rounded bg-indigo-950 border border-indigo-500/40 text-indigo-300">Dedicated</span>
