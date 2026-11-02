@@ -305,6 +305,10 @@ export default function App() {
               setSelectedUniId(id);
               handleNavigate('universities');
             }}
+            onSelectVibeCourse={(id: string) => {
+              setSelectedVibeCourseId(id || null);
+              handleNavigate('vibe-dubai');
+            }}
           />
         )}
 

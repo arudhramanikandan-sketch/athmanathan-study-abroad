@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Globe,
   BookOpen,
@@ -20,12 +20,21 @@ import {
   HelpCircle,
   Mail,
   Luggage,
+  X,
+  ZoomIn,
+  Check,
+  GraduationCap,
+  Clock,
+  Coins,
+  FileCheck,
 } from 'lucide-react';
 import { PublicBootstrapData } from '../types';
 import { buildWhatsAppLink } from '../api';
 import { JourneyRoadmap } from '../components/JourneyRoadmap';
 import { LiveCurrencyBar } from '../components/LiveCurrencyBar';
 import { LiveWeatherCard } from '../components/LiveWeatherCard';
+
+const VIBE_CERTIFICATE_SRC = '/assets/aistudio/WhatsApp_Image_2026-11-02_at_11.25.26_5f65da4f.jpeg';
 
 interface HomePageProps {
   data: PublicBootstrapData;
@@ -36,6 +45,7 @@ interface HomePageProps {
   onSelectCountry?: (id: string) => void;
   onSelectCourse?: (id: string) => void;
   onSelectUniversity?: (id: string) => void;
+  onSelectVibeCourse?: (id: string) => void;
 }
 
 export const HomePage: React.FC<HomePageProps> = ({
@@ -47,14 +57,111 @@ export const HomePage: React.FC<HomePageProps> = ({
   onSelectCountry,
   onSelectCourse,
   onSelectUniversity,
+  onSelectVibeCourse,
 }) => {
   const navigate = onNavigate || setActiveTab || (() => {});
   const { settings, countries, courses, universities, services, posters, testimonials, events } = data;
+
+  const [isCertModalOpen, setIsCertModalOpen] = useState(false);
 
   const mainWhatsAppUrl = buildWhatsAppLink(
     'Hello Athmanathan Study Abroad, I would like to explore my study abroad options and book a counselling session.',
     settings.whatsapp
   );
+
+  const vibeGeneralWhatsAppUrl = buildWhatsAppLink(
+    'Hello Athmanathan Study Abroad, I would like to enquire about admission for VIBE Education Dubai programmes.',
+    settings.whatsapp
+  );
+
+  const featuredVibeProgrammes = [
+    {
+      id: 'vibe-l45-business-mgmt',
+      title: 'Business Management',
+      level: 'Level 4 & 5 Extended Diploma',
+      awardingBody: 'OTHM Qualifications (UK Ofqual Regulated)',
+      duration: '12 Months (Fast Track) / 24 Months (Regular)',
+      credits: '240 Credits',
+      fee: 'Fast Track: USD 6,050 | Regular: USD 4,750 / level',
+      entryRequirements: 'Level 3 qualification or 10+2 high school completion. Age 18+.',
+      overview: 'Strategic marketing, organizational leadership, operational management, and UK Bachelor’s degree top-up pathway.',
+    },
+    {
+      id: 'vibe-l45-accounting',
+      title: 'Accounting & Business',
+      level: 'Level 4 & 5 Extended Diploma',
+      awardingBody: 'OTHM Qualifications (UK Ofqual Regulated)',
+      duration: '12 Months (Fast Track) / 24 Months (Regular)',
+      credits: '240 Credits',
+      fee: 'Fast Track: USD 6,050 | Regular: USD 4,750 / level',
+      entryRequirements: 'Level 3 qualification or 10+2 high school completion. Age 18+.',
+      overview: 'Financial accounting, corporate taxation, managerial audit, and financial reporting for international commerce.',
+    },
+    {
+      id: 'vibe-l45-it',
+      title: 'Information Technology',
+      level: 'Level 4 & 5 Extended Diploma',
+      awardingBody: 'OTHM Qualifications (UK Ofqual Regulated)',
+      duration: '12 Months (Fast Track) / 24 Months (Regular)',
+      credits: '240 Credits',
+      fee: 'Fast Track: USD 6,050 | Regular: USD 4,750 / level',
+      entryRequirements: 'Level 3 in IT / Science / Business or 10+2 with IT background. Age 18+.',
+      overview: 'Software engineering, database architecture, network administration, and cyber essentials in Dubai’s digital hub.',
+    },
+    {
+      id: 'vibe-l45-tourism-hospitality',
+      title: 'Tourism & Hospitality Management',
+      level: 'Level 4 & 5 Extended Diploma',
+      awardingBody: 'OTHM Qualifications (UK Ofqual Regulated)',
+      duration: '12 Months (Fast Track) / 24 Months (Regular)',
+      credits: '240 Credits',
+      fee: 'Fast Track: USD 6,050 | Regular: USD 4,750 / level',
+      entryRequirements: 'Level 3 qualification or 10+2 high school completion. Age 18+.',
+      overview: 'Front office management, international resort operations, guest experience design, and event governance.',
+    },
+    {
+      id: 'vibe-l45-health-social-care',
+      title: 'Health & Social Care Management',
+      level: 'Level 4 & 5 Extended Diploma',
+      awardingBody: 'OTHM Qualifications (UK Ofqual Regulated)',
+      duration: '12 Months (Fast Track) / 24 Months (Regular)',
+      credits: '240 Credits',
+      fee: 'Fast Track: USD 6,050 | Regular: USD 4,750 / level',
+      entryRequirements: 'Level 3 qualification or 10+2 academic background. Age 18+.',
+      overview: 'Healthcare leadership, clinical governance, ethical care standards, health policy, and facility administration.',
+    },
+    {
+      id: 'vibe-l5-psychology',
+      title: 'Psychology',
+      level: 'Level 5 Diploma',
+      awardingBody: 'OTHM Qualifications (UK Ofqual Regulated)',
+      duration: '12 Months Intensive (Fast Track Only)',
+      credits: '240 Credits',
+      fee: 'Fast Track Only: USD 6,050',
+      entryRequirements: 'Level 3 qualification or 10+2 with humanities / science and verified English proficiency. Age 18+.',
+      overview: 'Cognitive psychology, developmental behavior, research methods, and clinical case analysis. (Strictly Fast Track).',
+    },
+    {
+      id: 'vibe-l5-education-training',
+      title: 'Education & Training',
+      level: 'Level 5 Diploma',
+      awardingBody: 'OTHM Qualifications (UK Ofqual Regulated)',
+      duration: '12 Months',
+      credits: '120 Credits',
+      fee: 'Regular Track: USD 4,750',
+      entryRequirements: 'Level 4 diploma, teaching experience, or equivalent educational background. Age 19+.',
+      overview: 'Curriculum design, pedagogical delivery, modern instructional technology, and professional learner assessment.',
+    },
+  ];
+
+  const handleOpenCourse = (courseId: string) => {
+    if (onSelectVibeCourse) {
+      onSelectVibeCourse(courseId);
+    } else {
+      navigate('vibe-dubai');
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const mainPageMenuItems = [
     { id: 'countries', label: 'Countries', desc: `${countries?.length || 15}+ Global Hubs`, icon: Globe, highlight: 'border-blue-500/30 bg-blue-950/40 hover:border-blue-400' },
@@ -74,6 +181,357 @@ export const HomePage: React.FC<HomePageProps> = ({
 
   return (
     <div className="space-y-0">
+      {/* ============================================================== */}
+      {/* VIBE EDUCATION APPROVED PARTNER ANNOUNCEMENT (TOP OF HOMEPAGE) */}
+      {/* ============================================================== */}
+      <section
+        id="vibe-education-announcement"
+        aria-label="VIBE Education Approved Partner Announcement"
+        className="relative bg-gradient-to-b from-slate-950 via-blue-950 to-slate-900 text-white border-b-2 border-amber-500/40 shadow-2xl pt-6 pb-12 sm:pt-8 sm:pb-16"
+      >
+        {/* Subtle decorative glow */}
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 left-10 w-80 h-80 bg-blue-600/15 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
+          {/* Top Institutional Badge */}
+          <div className="flex flex-wrap items-center gap-2 mb-4">
+            <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-amber-500/15 border border-amber-400/40 text-amber-300 text-xs font-bold tracking-wide uppercase shadow-sm">
+              <Award className="w-3.5 h-3.5 text-amber-400" />
+              Official Institutional Partnership • Dubai, UAE
+            </span>
+            <span className="hidden sm:inline-flex items-center gap-1 text-xs text-slate-300 font-medium">
+              <CheckCircle className="w-3.5 h-3.5 text-emerald-400" />
+              Verified Certificate of Representation
+            </span>
+          </div>
+
+          {/* Main 2-Column Banner: Text + Official Certificate */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+            {/* Left Content Column */}
+            <div className="lg:col-span-7 space-y-4">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white font-serif uppercase leading-tight sm:leading-tight">
+                PROUD TO BE AN APPROVED PARTNER OF VIBE EDUCATION
+              </h1>
+
+              <p className="text-base sm:text-xl font-semibold text-amber-300 tracking-wide font-sans">
+                Explore International Education Opportunities in Dubai, UAE
+              </p>
+
+              <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl">
+                Athmanathan Study Abroad has been officially appointed as an <strong className="text-white font-semibold">Approved Partner</strong> of <strong className="text-white font-semibold">Vibe Education LLC, Dubai</strong>. The appointed partner is authorized to promote the institution's programmes internationally, provide prospective students with verified academic information and promotional support, and assist candidates throughout the application and enrolment process.
+              </p>
+
+              {/* Key Highlights Pills */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 pt-1 text-xs">
+                <div className="bg-slate-900/80 border border-slate-750 p-2.5 rounded-lg flex items-start gap-2">
+                  <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-white block">Official Partner</span>
+                    <span className="text-slate-400 text-[11px]">Authorized Agent</span>
+                  </div>
+                </div>
+                <div className="bg-slate-900/80 border border-slate-750 p-2.5 rounded-lg flex items-start gap-2">
+                  <GraduationCap className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-white block">British Diplomas</span>
+                    <span className="text-slate-400 text-[11px]">OTHM Regulated</span>
+                  </div>
+                </div>
+                <div className="col-span-2 sm:col-span-1 bg-slate-900/80 border border-slate-750 p-2.5 rounded-lg flex items-start gap-2">
+                  <Building2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-white block">Dubai Campus</span>
+                    <span className="text-slate-400 text-[11px]">On-Campus Study</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Action Buttons: EXPLORE COURSES + ENQUIRE ABOUT ADMISSION */}
+              <div className="pt-2 flex flex-wrap items-center gap-3 sm:gap-4">
+                {/* EXPLORE COURSES Button */}
+                <button
+                  type="button"
+                  onClick={() => {
+                    navigate('vibe-dubai');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 active:scale-95 text-slate-950 font-bold text-sm sm:text-base transition-all shadow-lg shadow-amber-500/25 cursor-pointer uppercase tracking-wider"
+                >
+                  <BookOpen className="w-5 h-5 text-slate-950" />
+                  <span>EXPLORE COURSES</span>
+                </button>
+
+                {/* ENQUIRE ABOUT ADMISSION Button (WhatsApp Only) */}
+                <a
+                  href={vibeGeneralWhatsAppUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 active:scale-95 text-slate-950 font-bold text-sm sm:text-base transition-all shadow-lg shadow-emerald-500/25 uppercase tracking-wider cursor-pointer"
+                >
+                  <MessageCircle className="w-5 h-5 fill-current" />
+                  <span>ENQUIRE ABOUT ADMISSION</span>
+                </a>
+              </div>
+
+              {/* No False Promises Reassurance */}
+              <p className="text-[11px] sm:text-xs text-slate-400 italic">
+                * Zero hidden charges. Public student enquiries are handled directly on official WhatsApp. Admission and visa approval are subject to institution criteria and Dubai immigration regulations.
+              </p>
+            </div>
+
+            {/* Right Column: Authentic Certificate Display with Click-to-Enlarge */}
+            <div className="lg:col-span-5 flex flex-col items-center">
+              <div className="w-full max-w-md bg-slate-900/90 rounded-2xl p-3 sm:p-4 border-2 border-amber-400/50 shadow-2xl shadow-blue-950/80">
+                <div className="flex items-center justify-between pb-2 mb-2 border-b border-slate-800">
+                  <div className="flex items-center gap-2 text-xs font-semibold text-amber-300">
+                    <Award className="w-4 h-4 text-amber-400" />
+                    <span>Official Approved Partner Certificate</span>
+                  </div>
+                  <span className="text-[10px] text-slate-400 bg-slate-800 px-2 py-0.5 rounded font-mono">
+                    Dubai, UAE
+                  </span>
+                </div>
+
+                {/* Certificate Image Frame */}
+                <button
+                  type="button"
+                  onClick={() => setIsCertModalOpen(true)}
+                  className="group relative block w-full bg-white rounded-xl overflow-hidden border border-slate-200 shadow-inner focus:outline-none focus:ring-2 focus:ring-amber-400 cursor-zoom-in"
+                  title="Click to view full-size official certificate"
+                >
+                  <img
+                    src={VIBE_CERTIFICATE_SRC}
+                    alt="Official VIBE Education Approved Partner Certificate awarded to Athmanathan Study Abroad"
+                    loading="eager"
+                    className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                  />
+                  <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-950/90 text-amber-300 text-xs font-bold shadow-lg border border-amber-400/50">
+                      <ZoomIn className="w-4 h-4" />
+                      Click to Enlarge
+                    </span>
+                  </div>
+                </button>
+
+                {/* Certificate Footer Meta */}
+                <div className="mt-3 pt-2 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-300">
+                  <span className="truncate">Issued by: Director – Operations, Vibe Education LLC</span>
+                  <button
+                    type="button"
+                    onClick={() => setIsCertModalOpen(true)}
+                    className="text-amber-400 hover:text-amber-300 font-semibold underline text-xs shrink-0 cursor-pointer ml-2"
+                  >
+                    View Full Certificate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* ============================================================== */}
+          {/* AVAILABLE PROGRAMMES QUICK SHOWCASE                            */}
+          {/* ============================================================== */}
+          <div className="mt-12 pt-10 border-t border-slate-800">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-amber-400 block mb-1">
+                  Verified Academic Portfolio • Dubai Campus
+                </span>
+                <h2 className="text-xl sm:text-2xl font-bold text-white font-serif">
+                  Available VIBE Education Dubai Programmes
+                </h2>
+                <p className="text-xs sm:text-sm text-slate-300 mt-1 max-w-2xl">
+                  British-regulated diplomas (Level 3 to Level 5) with international university degree top-up pathways (Level 6). All duration and fee structures are verified against official institutional agreements.
+                </p>
+              </div>
+
+              <button
+                type="button"
+                onClick={() => {
+                  navigate('vibe-dubai');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-amber-400 hover:text-amber-300 transition-colors shrink-0 cursor-pointer"
+              >
+                <span>View Full Dubai Course Catalogue</span>
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
+
+            {/* Responsive Course Grid: 7 key verified programmes */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {featuredVibeProgrammes.map((prog) => {
+                const courseWhatsAppLink = buildWhatsAppLink(
+                  `Hello Athmanathan Study Abroad, I would like to enquire about admission for the ${prog.title} programme at VIBE Education Dubai.`,
+                  settings.whatsapp
+                );
+
+                return (
+                  <div
+                    key={prog.id}
+                    className="flex flex-col justify-between bg-slate-900/90 rounded-xl p-4 border border-slate-800 hover:border-amber-400/50 transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-950/60"
+                  >
+                    <div>
+                      {/* Level & Awarding Body Badge */}
+                      <div className="flex items-center justify-between gap-2 mb-2">
+                        <span className="inline-block text-[10px] font-bold uppercase tracking-wide bg-amber-500/15 text-amber-300 border border-amber-400/30 px-2 py-0.5 rounded">
+                          {prog.level}
+                        </span>
+                        <span className="text-[10px] text-slate-400 font-mono">
+                          {prog.credits}
+                        </span>
+                      </div>
+
+                      {/* Title */}
+                      <h3 className="text-base font-bold text-white mb-2 leading-snug">
+                        {prog.title}
+                      </h3>
+
+                      <p className="text-xs text-slate-300 leading-relaxed mb-3 line-clamp-2">
+                        {prog.overview}
+                      </p>
+
+                      {/* Key Verified Specs */}
+                      <div className="space-y-1.5 text-xs text-slate-300 border-t border-slate-800/80 pt-2 mb-3">
+                        <div className="flex items-start gap-1.5">
+                          <Clock className="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5" />
+                          <span className="text-[11px] leading-tight">
+                            <strong className="text-slate-200">Duration:</strong> {prog.duration}
+                          </span>
+                        </div>
+                        <div className="flex items-start gap-1.5">
+                          <Coins className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+                          <span className="text-[11px] leading-tight">
+                            <strong className="text-slate-200">Verified Fee:</strong> {prog.fee}
+                          </span>
+                        </div>
+                        <div className="flex items-start gap-1.5">
+                          <FileCheck className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" />
+                          <span className="text-[11px] text-slate-400 leading-tight">
+                            <strong className="text-slate-300">Entry:</strong> {prog.entryRequirements}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Course Card Action Buttons */}
+                    <div className="pt-2 border-t border-slate-800/80 flex items-center gap-2">
+                      <button
+                        type="button"
+                        onClick={() => handleOpenCourse(prog.id)}
+                        className="flex-1 py-2 px-2.5 rounded-lg bg-blue-600/30 hover:bg-blue-600/50 text-blue-200 border border-blue-400/30 text-xs font-semibold text-center transition-colors cursor-pointer"
+                      >
+                        Course Details
+                      </button>
+                      <a
+                        href={courseWhatsAppLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="py-2 px-2.5 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-400/40 text-xs font-semibold inline-flex items-center justify-center gap-1 transition-colors"
+                        title="Enquire on WhatsApp about this course"
+                      >
+                        <MessageCircle className="w-3.5 h-3.5 fill-current" />
+                        <span>Enquire</span>
+                      </a>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Section 7: Trust, Transparency & Ethical Disclosure */}
+          <div className="mt-8 p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-300 space-y-1.5">
+            <div className="flex items-center gap-2 font-bold text-amber-300">
+              <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
+              <span>Trust & Transparency Disclosure (Institutional Representation)</span>
+            </div>
+            <p className="leading-relaxed text-[11px] text-slate-400">
+              Athmanathan Study Abroad is officially appointed as an Approved Partner of Vibe Education LLC based on the official Certificate of Representation. We provide student counselling, verified course outlines, and application coordination.
+              <strong className="text-slate-300"> Transparency Commitment:</strong> We do not claim guaranteed university admission, guaranteed UAE student visa approval, or guaranteed employment/internship placements. Programmes are vocational and higher diplomas awarded by OTHM Qualifications (UK Ofqual regulated), with university progression pathways to recognized Bachelor’s degrees. Course fees and entry criteria are subject to official offer letters and institutional confirmation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================== */}
+      {/* MODAL: CLICK-TO-ENLARGE OFFICIAL PARTNER CERTIFICATE           */}
+      {/* ============================================================== */}
+      {isCertModalOpen && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label="Official VIBE Education Approved Partner Certificate"
+          className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-slate-950/85 backdrop-blur-sm animate-in fade-in duration-200"
+          onClick={() => setIsCertModalOpen(false)}
+        >
+          <div
+            className="relative w-full max-w-4xl bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-200 flex flex-col max-h-[92vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div className="flex items-center justify-between px-4 sm:px-6 py-3.5 bg-slate-900 text-white border-b border-slate-800">
+              <div className="flex items-center gap-2.5">
+                <div className="w-7 h-7 rounded-lg bg-amber-500/20 border border-amber-400/40 flex items-center justify-center">
+                  <Award className="w-4 h-4 text-amber-400" />
+                </div>
+                <div>
+                  <h3 className="text-sm sm:text-base font-bold font-serif">
+                    VIBE Education Approved Partner Certificate
+                  </h3>
+                  <p className="text-[11px] text-slate-300">
+                    Official Certificate of Representation • Athmanathan Study Abroad
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setIsCertModalOpen(false)}
+                className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer"
+                aria-label="Close certificate modal"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Modal Body: Authentic, Unedited Certificate Image */}
+            <div className="p-3 sm:p-6 bg-slate-100 overflow-y-auto flex items-center justify-center">
+              <img
+                src={VIBE_CERTIFICATE_SRC}
+                alt="Official Certificate of Representation: Athmanathan Study Abroad has been officially appointed as an Approved Partner of Vibe Education LLC"
+                className="max-h-[70vh] w-auto max-w-full object-contain rounded-lg shadow-md border border-slate-300 bg-white"
+              />
+            </div>
+
+            {/* Modal Footer */}
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-3 px-4 sm:px-6 py-3 bg-slate-50 border-t border-slate-200 text-xs">
+              <span className="text-slate-600 text-[11px]">
+                Authorized by Director – Operations, Vibe Education LLC, Dubai, UAE.
+              </span>
+              <div className="flex items-center gap-2">
+                <a
+                  href={vibeGeneralWhatsAppUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs shadow-sm transition-colors"
+                >
+                  <MessageCircle className="w-3.5 h-3.5 fill-current" />
+                  <span>Enquire on WhatsApp</span>
+                </a>
+                <button
+                  type="button"
+                  onClick={() => setIsCertModalOpen(false)}
+                  className="px-4 py-2 rounded-lg bg-slate-200 hover:bg-slate-300 text-slate-800 font-semibold text-xs transition-colors cursor-pointer"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* 1. HERO SECTION */}
       <section className="relative overflow-hidden bg-gradient-to-b from-blue-950 via-slate-900 to-slate-950 text-white pt-16 pb-24 sm:pt-24 sm:pb-32">
         {/* Subtle geometric backdrop */}
